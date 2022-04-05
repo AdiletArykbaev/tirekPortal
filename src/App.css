@@ -1,0 +1,17 @@
+.App{
+  background-color: #f8ffff;
+}
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.a{
+  text-decoration: none;
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+}
+.content_wrapper{
+  padding: 5% 0 ;
+}
