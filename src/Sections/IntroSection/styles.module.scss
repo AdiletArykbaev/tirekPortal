@@ -4,7 +4,7 @@
     height: 100vh;
 }
 img{
-    max-width: 80%;
+    max-width: 90%;
 }
 .firstPart{
     padding: 5.5%;
@@ -22,9 +22,9 @@ img{
     content: "";
     width: 60.95px;
     height: 58.78px;
-    position: relative;
+    position: absolute;
     background-image: url("../../Assets/icons/listIcon.svg");
 }
 .text{
-    margin-left: 4%;
+    
 }

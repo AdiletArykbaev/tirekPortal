@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { MainImage } from "../../Assets/images";
 
+
 const IntroSection = () => {
   return (
     <div className={styles.wrapper}>
