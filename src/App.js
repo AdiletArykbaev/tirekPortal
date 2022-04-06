@@ -10,7 +10,7 @@ function App() {
 
         <div className="content_wrapper">
           <Routes>
-            <Route path={"/Main"} element={<MainPage/>}/>
+            <Route path={"/"} element={<MainPage/>}/>
 
           </Routes>
         </div>

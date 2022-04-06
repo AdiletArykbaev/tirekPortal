@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect} from "react";
 import styles from "./styles.module.scss";
 import { HeaderLogo } from "../../../Assets/icons";
 import { Navigation } from "../../atoms";
@@ -8,7 +8,7 @@ const Header = () => {
   const links = [
     {
       text: "Главная",
-      path: "/Main",
+      path: "/",
     },
     {
       text: "Новости",
@@ -34,12 +34,23 @@ const Header = () => {
 
   const listenScrollEvent = () => {
     if (window.scrollY > 50) {
-      setColor("box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);")
+      setColor(" 0px 4px 10px ")
+
     } else {
+      setColor("0px 0px 0px ")
+
     }
   };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+
+    return () => {
+        window.removeEventListener("scroll", listenScrollEvent);
+    };
+}, [])
+console.log(color)
   return (
-    <div className={styles.component_wrapper} >
+    <div className={styles.component_wrapper} style={{    boxShadow: color}} >
       <div className="wrapper">
         <div className={styles.pageWrapper}>
           <div className={styles.logoBlock}>
