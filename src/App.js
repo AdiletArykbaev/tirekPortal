@@ -6,13 +6,11 @@ import { MainPage } from './Pages';
 function App() {
   return (
     <div className="App">
-       <div className='wrapper'>
          <Header />
 
-       </div>
         <div className="content_wrapper">
           <Routes>
-            <Route path={"/"} element={<MainPage/>}/>
+            <Route path={"/Main"} element={<MainPage/>}/>
 
           </Routes>
         </div>

@@ -1,10 +1,12 @@
-.wrapper{
+.component_wrapper{
+ 
+}
+.pageWrapper{
     position: fixed;
     display: flex;
     justify-content: space-between;
     width: 90%;
     padding: 2% 0 ;
-    z-index: 1000;
 }
 
 .button{
@@ -21,4 +23,8 @@
         background-color: #14AD02 ;
         color:#fff;
     }
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
 }

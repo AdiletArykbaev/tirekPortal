@@ -15,7 +15,6 @@ img{
     font-family: Segoe UI, sans-serif;
     font-weight: 700;
     color: #000000;
-    padding: 4%;
 
 }
 .imageText::after{
@@ -25,6 +24,28 @@ img{
     position: absolute;
     background-image: url("../../Assets/icons/listIcon.svg");
 }
-.text{
-    
+
+.subtext{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: #7A7A7A;
+}
+.button{
+    padding: 2% 10%;
+    background: #15AF00;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10%;
+    outline: none;
+    border: none;
 }

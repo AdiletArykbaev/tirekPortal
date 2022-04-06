@@ -4,11 +4,11 @@ import {
   } from "react-router-dom";
 import styles from "./styles.module.scss"
 const Navigation = ({ links }) => {
-  return <nav className={styles.wrapper}>{
+  return(<nav className={styles.wrapper}>{
         links.map((item)=>{
-           return  <Link to={item.path} activeClassName={styles.active} className={styles.link} >{item.text}</Link>
+           return  <Link  to={item.path}  className={({isActive})=>isActive ?styles.active:styles.link} >{item.text}</Link>
         })
-      }</nav>;
+      }</nav>);
 };
 
 export default Navigation;

@@ -1,2 +1,3 @@
 import Navigation from "./Navigation/Navigation"
-export {Navigation}
+import AboutUsBlog from "./AboutUsBlog/AboutUsblog";
+export {Navigation,AboutUsBlog}
