@@ -1,2 +1,3 @@
 import MainImage from "./MainImage.png"
-export {MainImage}
+import Avatar from "./ava.png"
+export {MainImage,Avatar}

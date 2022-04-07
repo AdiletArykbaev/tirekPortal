@@ -1,7 +1,7 @@
 import './App.css';
 import { Header } from './Сomponents/moleculas';
 import { Routes,Route,} from "react-router-dom"
-import { MainPage } from './Pages';
+import { MainPage,Admin,ContactPage} from './Pages';
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
         <div className="content_wrapper">
           <Routes>
             <Route path={"/"} element={<MainPage/>}/>
-
+            <Route path={"/admin"} element={<Admin/>}/>
+            <Route path={"/contacts"} element={<ContactPage/>}/>
           </Routes>
         </div>
     </div>

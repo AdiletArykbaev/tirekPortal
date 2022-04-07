@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { IntroSection } from "../../Sections";
+import { IntroSection, AboutUs,Services} from "../../Sections";
 const MainPage = () => {
   return (
     <div className={styles.wrapper}>
         <IntroSection/>
+        <AboutUs/>
+        <Services/>
+
     </div>
   );
 };

@@ -1,2 +1,4 @@
 import IntroSection from "./IntroSection/IntroSection";
-export {IntroSection,}
+import AboutUs from './AboutUsSection/AboutUs';
+import Services from "./Services/Services";
+export {IntroSection,AboutUs,Services}

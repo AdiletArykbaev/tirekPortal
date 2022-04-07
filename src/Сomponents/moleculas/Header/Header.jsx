@@ -4,7 +4,8 @@ import { HeaderLogo } from "../../../Assets/icons";
 import { Navigation } from "../../atoms";
 
 const Header = () => {
-  const [color,setColor] = useState()
+  const [color,setColor] = useState("")
+  const [background,setBackground] = useState("")
   const links = [
     {
       text: "Главная",

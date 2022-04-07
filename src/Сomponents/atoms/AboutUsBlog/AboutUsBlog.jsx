@@ -4,7 +4,7 @@ import styles from "./styles.module.scss"
 
 const AboutUsBlog = ({title,textBody}) => {
   return (
-    <div className='wrapper'>
+    <div className={styles.wrapper}>
          <h1 className={styles.main_title}>
             {title}
          </h1>

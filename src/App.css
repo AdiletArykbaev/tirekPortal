@@ -1,5 +1,7 @@
 .App{
   background-color: #f8ffff;
+  display: flex;
+  flex-direction: column;
 }
 .wrapper {
   max-width: 90%;
@@ -15,4 +17,5 @@ button{
 }
 .content_wrapper{
   padding: 5% 0 ;
+  margin-top: 5%;
 }
