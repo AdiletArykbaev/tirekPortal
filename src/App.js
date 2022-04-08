@@ -6,6 +6,7 @@ import { MainPage,Admin,ContactPage} from './Pages';
 function App() {
   return (
     <div className="App">
+         <input type="text" />
          <Header />
 
         <div className="content_wrapper">
