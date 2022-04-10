@@ -90,3 +90,6 @@
     width: 100px;
     height: 50px;
 }
+.component_wrapper{
+    display: flex;
+}

@@ -35,10 +35,10 @@ const Header = () => {
 
   const listenScrollEvent = () => {
     if (window.scrollY > 50) {
-      setColor(" 0px 4px 10px ")
+      setColor(" 1px solid ")
 
     } else {
-      setColor("0px 0px 0px ")
+      setColor("none")
 
     }
   };
@@ -51,7 +51,7 @@ const Header = () => {
 }, [])
 console.log(color)
   return (
-    <div className={styles.component_wrapper} style={{    boxShadow: color}} >
+    <div className={styles.component_wrapper} style={{borderBottom:color}} >
       <div className="wrapper">
         <div className={styles.pageWrapper}>
           <div className={styles.logoBlock}>

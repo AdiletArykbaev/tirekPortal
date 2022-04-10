@@ -14,7 +14,7 @@ function App() {
             <Route path={"/"} element={<MainPage/>}/>
             <Route path={"/login"} element={<Login/>}/>
             <Route path={"/appeal"} element={<ContactPage/>}/>
-            <Route path={"/gallery"} element={<Gallery/>}/>
+            <Route path={"/gallery"} element={<Gallery page={true}/>}/>
           </Routes>
         </div>
         <Footer/>

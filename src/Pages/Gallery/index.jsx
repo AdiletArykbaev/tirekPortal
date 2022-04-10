@@ -17,7 +17,7 @@ import fifteen from '../../Assets/images/gallery/fifteen.png';
 import last from '../../Assets/images/gallery/last.png';
 import './gallery.css';
 
-const Gallery = () => {
+const Gallery = ({page}) => {
     const gallery = [one, two, three, four, five, six, seven, vosem, nine, ten, eleven, twelwe, thirteen, fourteen, fifteen, last];
     const [image, setImage] = useState('');
     const openGallery = (e) => {
@@ -32,7 +32,7 @@ const Gallery = () => {
     };
     return (
         <div className="gallery">
-            <div className="wrapper">
+           {page? <div className="wrapper">
                 <h1 className="gallery__title">Фотогалерея</h1>
                 <div className="gallery__content">
                     <img onClick={(e) => openGallery(e)} className="gallery__small" src={one} alt="asd"/>
@@ -80,7 +80,22 @@ const Gallery = () => {
                         </div>
                         : ''
                 }
+            </div>:
+            <div className='wrapper'>
+                <h1 className="gallery__title">Фотогалерея</h1>
+                <div className='component_wrapper'>
+                  <img onClick={(e) => openGallery(e)} className="gallery__small" src={one} alt="asd"/>
+                    <img onClick={(e) => openGallery(e)} className="gallery__mid" src={two} alt=""/>
+                    <div className="gallery__content_col">
+                        <img onClick={(e) => openGallery(e)} src={three} alt=""/>
+                        <img onClick={(e) => openGallery(e)} src={four} alt=""/>
+                   </div>
+                </div>
+                  
+
             </div>
+            
+            }
         </div>
     );
 };
