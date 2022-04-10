@@ -1,0 +1,19 @@
+.wrapper{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    .content_wrapper{
+      form{
+        display: flex;
+        flex-direction: column;  
+      }
+    
+      input{
+          margin-top: 5%;
+      }
+      button{
+        margin-top: 5%;
+
+      }
+    }
+}

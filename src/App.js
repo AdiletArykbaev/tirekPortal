@@ -1,7 +1,8 @@
 import './App.css';
 import { Header } from './Сomponents/moleculas';
 import { Routes,Route,} from "react-router-dom"
-import { MainPage,Admin,ContactPage} from './Pages';
+import { MainPage,Login,ContactPage} from './Pages';
+import Footer from './Сomponents/moleculas/Footer/Footer';
 
 function App() {
   return (
@@ -12,10 +13,12 @@ function App() {
         <div className="content_wrapper">
           <Routes>
             <Route path={"/"} element={<MainPage/>}/>
-            <Route path={"/admin"} element={<Admin/>}/>
-            <Route path={"/contacts"} element={<ContactPage/>}/>
+            <Route path={"/login"} element={<Login/>}/>
+            <Route path={"/appeal"} element={<ContactPage/>}/>
           </Routes>
         </div>
+        <Footer/>
+
     </div>
   );
 }

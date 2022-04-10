@@ -1,8 +1,8 @@
 import { combineReducers } from "redux"
-import loginReducer from "./loginReducer"
+import  {rootReducer} from "./rootReducer"
 
 
 
 export default combineReducers({
-    admin: loginReducer
+    news:rootReducer
 })
