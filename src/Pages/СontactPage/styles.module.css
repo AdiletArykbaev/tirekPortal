@@ -1,0 +1,194 @@
+.wrapper {
+  width: 99%;
+  height: 2700px;
+  position: relative;
+}
+.wrapper .appeal {
+  width: 1060px;
+  height: 1100px;
+  position: relative;
+  left: 70px;
+  top: 70px;
+}
+.wrapper .appeal .appealPageOne {
+  width: 100%;
+  height: 370px;
+}
+.wrapper .appeal .appealPageOne .appealWord {
+  margin: 0 0 20px 0;
+}
+.wrapper .appeal .appealPageOne .appealContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 220px;
+  margin-left: 68px;
+  margin-top: 70px;
+}
+.wrapper .appeal .appealPageOne .appealContent .urmat {
+  font-size: 32px;
+  font-weight: 500;
+}
+.wrapper .appeal .appealPageOne .appealContent .p {
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.wrapper .appeal .appealPageOne .appealContent .pTwo {
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.wrapper .appeal .appealPageTwo {
+  width: 100%;
+  height: 380px;
+}
+.wrapper .appeal .appealPageTwo .appealContentTwo {
+  width: 80%;
+  height: 250px;
+  margin-left: 68px;
+  margin-top: 70px;
+}
+.wrapper .appeal .appealPageTwo .appealContentTwo .appealTextTwo {
+  font-weight: 600;
+  font-size: 24px;
+}
+.wrapper .appeal .appealPageTwo .appealContentTwo .divUl {
+  margin: 40px 0 0 0;
+}
+.wrapper .appeal .appealPageTwo .appealContentTwo ul .liTwo {
+  font-size: 22px;
+  margin: 20px 0 10px 0;
+}
+.wrapper .appeal .appealPageThree {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  bottom: 60px;
+}
+.wrapper .appeal .appealPageThree .appealContentThree {
+  width: 80%;
+  height: 250px;
+  margin-left: 68px;
+  margin-top: 45px;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .TextThree {
+  font-size: 24px;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .TextThree .th {
+  color: red;
+  font-weight: 600;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .divUlThree {
+  margin: 40px 0 0 0;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .divUlThree ul .liThree {
+  margin: 20px 0 0 0;
+  font-size: 22px;
+}
+.wrapper .inputs {
+  width: 1200px;
+  position: relative;
+  left: 70px;
+  top: 170px;
+}
+.wrapper .inputs .inputsBorder {
+  display: flex;
+  width: 100%;
+  height: 568px;
+  border: 2px solid rgba(139, 104, 104, 0.5);
+}
+.wrapper .inputs .inputsBorder .inputsPageOne {
+  width: 40%;
+  height: 60%;
+  position: relative;
+  top: 100px;
+  left: 60px;
+}
+.wrapper .inputs .inputsBorder .inputsPageOne form fieldset.fildOne {
+  width: 80%;
+}
+.wrapper .inputs .inputsBorder .inputsPageOne form fieldset.fildOne .star {
+  color: red;
+}
+.wrapper .inputs .inputsBorder .inputsPageOne form fieldset.fildOne .inputFio {
+  width: 370px;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(233, 233, 233, 0.1);
+}
+.wrapper .inputs .inputsBorder .inputsPageOne form fieldset.fildTwo {
+  width: 80%;
+  height: 33px;
+  margin-top: 27px;
+}
+.wrapper .inputs .inputsBorder .inputsPageOne form fieldset.fildTwo .inputPhones {
+  font-family: Montserrat;
+  width: 370px;
+  height: 100%;
+  border: 1px solid rgba(233, 233, 233, 0.1);
+  background-color: transparent;
+  position: relative;
+}
+.wrapper .inputs .inputsBorder .inputsPageTwo {
+  align-self: center;
+  width: 45%;
+  height: 60%;
+  position: relative;
+  left: 70px;
+  bottom: 4px;
+}
+.wrapper .inputs .inputsBorder .inputsPageTwo fieldset {
+  height: 117px;
+}
+.wrapper .inputs .inputsBorder .inputsPageTwo fieldset .inputsComment {
+  background-color: transparent;
+  border: 1px solid rgba(235, 232, 232, 0.1);
+  width: 100%;
+  height: 120px;
+}
+.wrapper .inputs .inputsBorder .inputsPageTwo .BtnDownload {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  margin-top: 20px;
+}
+.wrapper .inputs .inputsBorder .inputsPageTwo .BtnDownload .line {
+  width: 20px;
+  height: 3px;
+  background-color: green;
+  margin: 17px 15px 0 14px;
+}
+.wrapper .inputs .inputsBorder .inputsPageTwo .BtnDownload .wordDown {
+  margin: 0 15px 0 0;
+  font-weight: 500;
+}
+.wrapper .inputs .inputsBorder .inputsPageTwo .BtnDownload .wordFail {
+  color: blue;
+}
+.wrapper .inputs .inputsBorder .inputsPageTwo .Button {
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 150px;
+  height: 40px;
+  background-color: #14AD02;
+  position: relative;
+  left: 300px;
+  top: 90px;
+  cursor: pointer;
+}
+.wrapper .inputs .Email {
+  margin-left: 60px;
+  margin-top: 100px;
+  font-size: 19px;
+  width: 1050px;
+}
+.wrapper .inputs .Email .emaile {
+  text-decoration: underline;
+  color: blue;
+}
+
+/*# sourceMappingURL=styles.module.css.map */
