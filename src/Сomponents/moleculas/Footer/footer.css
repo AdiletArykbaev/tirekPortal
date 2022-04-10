@@ -1,0 +1,126 @@
+.footer {
+    position: relative;
+    padding: 80px 0 30px;
+    border-top: 2px solid #DADADA;
+}
+
+.footer::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #00000010;
+    bottom: 80px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 100px;
+}
+
+.footer__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.footer__menu ul {
+    margin: 0;
+}
+
+.footer__menu li:not(:last-child) {
+    margin: 0 0 14px;
+}
+
+.footer__title {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 0 13px;
+    border-bottom: 2px solid #14AD02;
+    margin: 0 0 22px;
+}
+
+.footer__menu a {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__input {
+    margin: 35px 0 0;
+    background: #FFFFFF;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border: none;
+    padding: 15px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.5;
+}
+
+.footer__input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.7;
+}
+
+.footer__btn {
+    background: #14AD02;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFF;
+    padding: 13px;
+    border: 1px solid #14AD02;
+    margin: 0 0 0 10px;
+}
+
+.footer__btn:hover {
+    border: 1px solid #14AD02;
+    background: transparent;
+    color: #14AD02;
+}
+
+.footer__contact {
+    padding: 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.footer__contact p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer__right {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.footer__icons {
+    display: flex;
+    column-gap: 18px;
+}
+
+.footer__icons img {
+    width: 20px;
+    height: 20px;
+}
