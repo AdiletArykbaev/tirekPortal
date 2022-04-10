@@ -1,20 +1,8 @@
 import React, {useState} from 'react';
-import one from '../../Assets/images/gallery/one.png';
-import two from '../../Assets/images/gallery/two.png';
-import three from '../../Assets/images/gallery/three.png';
-import four from '../../Assets/images/gallery/four.png';
-import five from '../../Assets/images/gallery/five.png';
-import six from '../../Assets/images/gallery/six.png';
-import seven from '../../Assets/images/gallery/seven.png';
-import vosem from '../../Assets/images/gallery/vosem.png';
-import nine from '../../Assets/images/gallery/nine.png';
-import ten from '../../Assets/images/gallery/ten.png';
-import eleven from '../../Assets/images/gallery/eleven.png';
-import twelwe from '../../Assets/images/gallery/twelwe.png';
-import thirteen from '../../Assets/images/gallery/thirteen.png';
-import fourteen from '../../Assets/images/gallery/fourteen.png';
-import fifteen from '../../Assets/images/gallery/fifteen.png';
-import last from '../../Assets/images/gallery/last.png';
+import {
+    one,two,three,four,five,six,seven,vosem,nine,ten,eleven,twelwe,thirteen,fourteen,fifteen,last
+}from '../../Assets/images/gallery';
+
 import './gallery.css';
 
 const Gallery = ({page}) => {

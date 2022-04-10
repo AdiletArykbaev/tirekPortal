@@ -1,0 +1,32 @@
+.wrapper{
+    height: 163px;
+    width: 60%;
+    border-bottom: 1px solid #DADADA;
+    .date{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 210.9%;
+        /* identical to box height, or 34px */
+
+        letter-spacing: 0.01em;
+
+        color: #6A6A6A;
+
+    }
+    .body{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 160%;
+        /* or 38px */
+
+        text-align: justify;
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+
+        color: #000000;
+    }
+}
