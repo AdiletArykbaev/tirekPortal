@@ -1,3 +1,7 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
 .App{
   background-color: #f8ffff;
   display: flex;
