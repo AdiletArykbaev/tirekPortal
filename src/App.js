@@ -1,8 +1,7 @@
 import './App.css';
-import { Header } from './Сomponents/moleculas';
+import { Header,Footer} from './Сomponents/moleculas';
 import { Routes,Route,} from "react-router-dom"
-import { MainPage,Login,ContactPage} from './Pages';
-import Footer from './Сomponents/moleculas/Footer/Footer';
+import { MainPage,Login,ContactPage,Gallery} from './Pages';
 
 function App() {
   return (
@@ -15,6 +14,7 @@ function App() {
             <Route path={"/"} element={<MainPage/>}/>
             <Route path={"/login"} element={<Login/>}/>
             <Route path={"/appeal"} element={<ContactPage/>}/>
+            <Route path={"/gallery"} element={<Gallery/>}/>
           </Routes>
         </div>
         <Footer/>
