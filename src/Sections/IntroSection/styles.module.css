@@ -36,7 +36,7 @@ img {
 }
 
 .subtext {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -48,7 +48,7 @@ img {
   padding: 2% 10%;
   background: #15AF00;
   border-radius: 3px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
