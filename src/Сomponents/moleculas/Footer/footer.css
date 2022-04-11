@@ -44,12 +44,13 @@
     margin: 0 0 22px;
 }
 
-.footer__menu a {
+.footer__menu a, .footer__menu p {
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
     margin: 0;
     padding: 0;
+    color: #000000
 }
 
 .footer__input {
@@ -69,7 +70,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    opacity: 0.7;
 }
 
 .footer__btn {
@@ -101,6 +101,13 @@
     display: flex;
     align-items: center;
     column-gap: 20px;
+}
+
+.footer__left a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: black;
 }
 
 .footer__contact p {

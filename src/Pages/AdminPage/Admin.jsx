@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from "./styles.module.scss"
 
 const Admin = () => {
   return (
-    <div>Admin</div>
+    <div className={styles.wrapper}> Admin page</div>
   )
 }
 

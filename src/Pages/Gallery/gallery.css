@@ -1,5 +1,6 @@
 .gallery {
     padding: 50px 0 100px;
+    position: relative;
 }
 
 .gallery__title {
@@ -16,7 +17,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 32px;
-    position: relative;
 }
 
 .gallery__content img {
@@ -31,7 +31,7 @@
     transition: 0.2s;
 }
 
-.gallery__content::after {
+.gallery::after {
     content: '';
     background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #F8FFFF 100.63%);
     width: 100%;

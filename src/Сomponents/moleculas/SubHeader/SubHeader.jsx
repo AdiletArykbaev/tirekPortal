@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom'
 const SubHeader = ({link}) => {
   return (
     <div className={styles.wrapper}>
-        {link.map((item)=>{
-            return <Link className={({isActive})=>isActive ?styles.active:styles.link} to={item.path} >{item.text}</Link>
-        })}
+        <div className={styles.content_wrapper}>
+            {link.map((item)=>{
+                return <Link className={({isActive})=>isActive ?styles.active:styles.link} to={`/projects${item.path}`} >{item.text}</Link>
+            })}
+        </div>
+      
     </div>
   )
 }

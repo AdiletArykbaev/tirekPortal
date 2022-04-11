@@ -1,7 +1,8 @@
 .wrapper{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
+   
+    border-top:  1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 2%;
 }
 a{
     font-family: 'Montserrat';
@@ -14,4 +15,10 @@ a{
         color: #14AD02;
 
     }
+}
+.content_wrapper{
+    padding: 3% 5%;
+    display: flex;
+    margin-left: 2%;
+    justify-content: space-between;
 }

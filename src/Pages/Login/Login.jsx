@@ -2,6 +2,8 @@ import React from 'react'
 import styles from "./styles.module.scss"
 import { useState,useEffect,useRef} from 'react'
 import axios from '../../Requests/axios'
+import {Route, Routes, useNavigate} from "react-router-dom"
+import Admin from '../AdminPage/Admin'
 
 const Login = () => {
  const userRef = useRef(null);
@@ -11,6 +13,7 @@ const Login = () => {
  const [errMsg,setErrMsg] = useState("")
  const [success,setSuccess] = useState(false)
  const LOGIN_URL = "/login"
+ const navigate = useNavigate()
  useEffect(()=>{
    userRef.current.focus();
  },[])
@@ -29,9 +32,16 @@ const Login = () => {
         }
       )
      console.log(JSON.stringify(response?.data))
+     setSuccess(true)
+  
+     
   }catch(e){
     console.log(e)
   }
+ }
+ if(success === true){
+  navigate("/admin")
+
  }
  return (
     <div className={styles.wrapper}>
@@ -47,7 +57,9 @@ const Login = () => {
           <button type='submit'> войти</button>
         </form>
      </div>
-       
+       <Routes>
+         <Route path='/admin' element={<Admin/>}></Route>
+       </Routes>
     </div>
   )
 }

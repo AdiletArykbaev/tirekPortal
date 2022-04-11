@@ -18,10 +18,10 @@ const Footer = () => {
                         <ul>
                             <h2 className="footer__title">Быстрые ссылки</h2>
                             <li>
-                                <Link to="/">Проекты</Link>
+                                <Link to="/projects">Проекты</Link>
                             </li>
                             <li>
-                                <Link to="/">Новости</Link>
+                                <Link to="/news">Новости</Link>
                             </li>
                             <li>
                                 <Link to="/">Обращение</Link>
@@ -42,13 +42,13 @@ const Footer = () => {
                         <ul>
                             <h2 className="footer__title">Контакты</h2>
                             <li>
-                                <Link to="/">720031, Кыргызстан</Link>
+                                <p>720031, Кыргызстан</p>
                             </li>
                             <li>
-                                <Link to="/">ул. Ибраимова 96, Бишкек</Link>
+                                <p>ул. Ибраимова 96, Бишкек</p>
                             </li>
                             <li>
-                                <Link to="/">tirek.org@gmail.com </Link>
+                                <a href="mailto:tirek.org@gmail.com">tirek.org@gmail.com</a>
                             </li>
                         </ul>
                     </div>
@@ -64,19 +64,27 @@ const Footer = () => {
                 </div>
                 <div className="footer__contact">
                     <div className="footer__left">
-                        <p>Terms</p>
-                        <p>Privacy</p>
-                        <p>License</p>
+                        <Link to="/">Terms</Link>
+                        <Link to="/">Privacy</Link>
+                        <Link to="/">License</Link>
                     </div>
                     <p className="footer__center">Copyright ©2022 Эне-балага тирек | This web-site is made by
                         Fortylines.io</p>
                     <div className="footer__right">
                         <p>Следите за нами</p>
                         <div className="footer__icons">
-                            <img src={inst} alt="inst"/>
-                            <img src={facebook} alt="facebook"/>
-                            <img src={youtube} alt="youtube"/>
-                            <img src={twitter} alt="twitter"/>
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <img src={inst} alt="inst"/>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <img src={facebook} alt="facebook"/>
+                            </a>
+                            <a target="_blank" href="https://www.youtube.com/">
+                                <img src={youtube} alt="youtube"/>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/">
+                                <img src={twitter} alt="twitter"/>
+                            </a>
                         </div>
                     </div>
                 </div>

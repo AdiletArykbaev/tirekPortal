@@ -3,7 +3,6 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
   border-radius: 10px;
-  width: 400px;
 }
 
 .img {
@@ -31,10 +30,12 @@
   color: #0F001A;
   margin: 0 0 30px;
 }
+
 .btnBox {
   display: flex;
   justify-content: flex-end;
 }
+
 .btn {
   font-weight: 500;
   font-size: 16px;
@@ -45,8 +46,17 @@
   align-items: center;
   column-gap: 10px;
   text-transform: capitalize;
+
   svg {
     width: 17px;
     height: 15px;
   }
+}
+
+.date {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 210.9%;
+  letter-spacing: 0.01em;
+  color: #6A6A6A;
 }

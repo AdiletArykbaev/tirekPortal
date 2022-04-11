@@ -21,10 +21,10 @@
   display: flex;
 }
 .subcontent .pagination {
-  width: 80%;
+  width: 70%;
 }
 .subcontent .recomendation {
-  width: 20%;
+  width: 30%;
   margin-left: 15%;
 }
 
