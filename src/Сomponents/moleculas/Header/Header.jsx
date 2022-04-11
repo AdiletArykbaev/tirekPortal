@@ -2,6 +2,7 @@ import React, { useState,useEffect} from "react";
 import styles from "./styles.module.scss";
 import { HeaderLogo } from "../../../Assets/icons";
 import { Navigation } from "../../atoms";
+import { MaxMedium,MinMedium } from "../../../utils/mediaQuiries";
 
 const Header = () => {
   const [color,setColor] = useState("")
@@ -51,8 +52,9 @@ const Header = () => {
 }, [])
 console.log(color)
   return (
-    <div className={styles.component_wrapper} style={{borderBottom:color}} >
-      <div className="wrapper">
+    <div className={styles.component_wrapper} style={{borderBottom:color}} >]
+    <MinMedium>
+    <div className="wrapper">
         <div className={styles.pageWrapper}>
           <div className={styles.logoBlock}>
             <img src={HeaderLogo} alt="Logo" />
@@ -63,6 +65,10 @@ console.log(color)
           <button className={styles.button}>Связаться</button>
         </div>
       </div>
+    </MinMedium>
+    <MaxMedium>
+      burger menu
+    </MaxMedium>
     </div>
   );
 };
