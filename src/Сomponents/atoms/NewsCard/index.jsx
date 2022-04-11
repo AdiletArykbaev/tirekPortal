@@ -2,12 +2,13 @@ import React from 'react';
 import styles from './newsCard.module.scss';
 import {Button} from "@mui/material";
 
-const NewsCard = ({title,subtitle,image}) => {
+const NewsCard = ({title, subtitle, image, cardDate, width}) => {
     return (
 
-        <div className={styles.box}>
+        <div style={{width: width}} className={styles.box}>
             <img className={styles.img} src={image} alt=""/>
             <div className={styles.content}>
+                {cardDate !== undefined ? <p className={styles.date}>{cardDate}</p> : ''}
                 <h3 className={styles.title}>{title}</h3>
                 <p className={styles.subtitle}>{subtitle}</p>
                 <div className={styles.btnBox}>

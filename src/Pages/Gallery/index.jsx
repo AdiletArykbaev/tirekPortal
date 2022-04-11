@@ -69,14 +69,16 @@ const Gallery = ({page}) => {
                             data-fancybox="gallery" className="gallery__small" src={last} alt=""/>
                     </div>
                 </div>
-                : <div className='wrapper'>
-                    <h1 className="gallery__title">Фотогалерея</h1>
-                    <div className='component_wrapper'>
-                        <img className="gallery__small" src={one} alt="asd"/>
-                        <img className="gallery__mid" src={two} alt=""/>
-                        <div className="gallery__content_col">
-                            <img src={three} alt=""/>
-                            <img src={four} alt=""/>
+                : <div className="gallery__content">
+                    <div className='wrapper'>
+                        <h1 className="gallery__title">Фотогалерея</h1>
+                        <div className='component_wrapper'>
+                            <img className="gallery__small" src={one} alt="asd"/>
+                            <img className="gallery__mid" src={two} alt=""/>
+                            <div className="gallery__content_col">
+                                <img src={three} alt=""/>
+                                <img src={four} alt=""/>
+                            </div>
                         </div>
                     </div>
                 </div>

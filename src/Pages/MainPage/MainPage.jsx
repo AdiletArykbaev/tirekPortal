@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import {IntroSection, AboutUs, Services} from "../../Sections";
 import {Gallery} from "..";
 import Contacts from "../../Sections/ContactsSection";
+import NewsMain from "../../Sections/NewsMain";
 
 const MainPage = () => {
     return (
@@ -10,6 +11,7 @@ const MainPage = () => {
             <IntroSection/>
             <AboutUs/>
             <Services/>
+            <NewsMain/>
             <Gallery page={false}/>
             <Contacts/>
         </div>
