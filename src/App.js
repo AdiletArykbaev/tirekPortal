@@ -2,6 +2,7 @@ import './App.css';
 import { Header,Footer} from './Сomponents/moleculas';
 import { Routes,Route,} from "react-router-dom"
 import { MainPage,Login,ContactPage,Gallery,PageNotFound,NewsPage} from './Pages';
+import "@fancyapps/ui/dist/fancybox.css";
 
 function App() {
   return (
