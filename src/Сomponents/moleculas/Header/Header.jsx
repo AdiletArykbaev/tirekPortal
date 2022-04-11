@@ -1,76 +1,131 @@
-import React, { useState,useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./styles.module.scss";
-import { HeaderLogo } from "../../../Assets/icons";
-import { Navigation } from "../../atoms";
-import { MaxMedium,MinMedium } from "../../../utils/mediaQuiries";
+import {HeaderLogo} from "../../../Assets/icons";
+import {Navigation} from "../../atoms";
+import {MaxMedium, MinMedium} from "../../../utils/mediaQuiries";
+import {Link} from "react-router-dom";
 
 const Header = () => {
-  const [color,setColor] = useState("")
-  const [background,setBackground] = useState("")
-  const links = [
-    {
-      text: "Главная",
-      path: "/",
-    },
-    {
-      text: "Новости",
-      path: "/News",
-    },
-    {
-      text: "Проекты",
-      path: "/projects",
-    },
-    {
-      text: "Обращение",
-      path: "/appeal",
-    },
-    {
-      text: "Фотогалерея",
-      path: "/gallery",
-    },
-    {
-      text: "Контакты",
-      path: "/contacts",
-    },
-  ];
+    const [color, setColor] = useState("")
+    const [background, setBackground] = useState("")
+    const links = [
+        {
+            text: "Главная",
+            path: "/",
+        },
+        {
+            text: "Новости",
+            path: "/News",
+        },
+        {
+            text: "Проекты",
+            path: "/projects",
+        },
+        {
+            text: "Обращение",
+            path: "/appeal",
+        },
+        {
+            text: "Фотогалерея",
+            path: "/gallery",
+        },
+        {
+            text: "Контакты",
+            path: "/contacts",
+        },
+    ];
 
-  const listenScrollEvent = () => {
-    if (window.scrollY > 50) {
-      setColor(" 1px solid ")
+    const listenScrollEvent = () => {
+        if (window.scrollY > 50) {
+            setColor(" 1px solid ")
 
-    } else {
-      setColor("none")
+        } else {
+            setColor("none")
 
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
-
-    return () => {
-        window.removeEventListener("scroll", listenScrollEvent);
+        }
     };
-}, [])
-console.log(color)
-  return (
-    <div className={styles.component_wrapper} style={{borderBottom:color}} >]
-    <MinMedium>
-    <div className="wrapper">
-        <div className={styles.pageWrapper}>
-          <div className={styles.logoBlock}>
-            <img src={HeaderLogo} alt="Logo" />
-          </div>
-          <div className={styles.navigation}>
-            <Navigation links={links} />
-          </div>
-          <button className={styles.button}>Связаться</button>
+    useEffect(() => {
+        window.addEventListener("scroll", listenScrollEvent);
+
+        return () => {
+            window.removeEventListener("scroll", listenScrollEvent);
+        };
+    }, [])
+    console.log(color)
+
+    const [menu, setMenu] = useState(false);
+    return (
+        <div className={styles.component_wrapper} style={{borderBottom: color}}>
+            <div className="wrapper">
+                <div className={styles.pageWrapper}>
+                    <div className={styles.logoBlock}>
+                        <img src={HeaderLogo} alt="Logo"/>
+                    </div>
+                    <MinMedium>
+                        <div className={styles.navigation}>
+                            <Navigation links={links}/>
+                        </div>
+                        <button className={styles.button}>Связаться</button>
+                    </MinMedium>
+                    <MaxMedium>
+                        <div className={styles.burger}>
+                            {
+                                menu ? <i onClick={() => {
+                                        document.querySelector('body').style.overflow = 'auto';
+                                        setMenu(!menu)
+                                    }} className="ri-close-line"/> :
+                                    <i onClick={() => {
+                                        document.querySelector('body').style.overflow = 'hidden';
+                                        setMenu(!menu)
+                                    }} className="ri-menu-line"/>
+                            }
+                        </div>
+                        <div className={menu ? styles.popupOpen : styles.popup}>
+                            <div className={styles.popupContent}>
+                                <ul>
+                                    <li>
+                                        <Link to="/">
+                                            Главная
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            Новости
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            Проекты
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            Обращение
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            Фотогалерея
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            Контакты
+                                        </Link>
+                                    </li>
+                                </ul>
+                                <div className={styles.email}>
+                                    <i className="ri-mail-line"/>
+                                    <a href="mailto:tirek.org@gmail.com ">tirek.org@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </MaxMedium>
+                </div>
+            </div>
         </div>
-      </div>
-    </MinMedium>
-    <MaxMedium>
-      burger menu
-    </MaxMedium>
-    </div>
-  );
+    );
 };
 
 export default Header;

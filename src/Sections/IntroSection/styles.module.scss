@@ -1,51 +1,87 @@
-.wrapper{
-    display: flex;
-    height: 100vh;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 90%;
+}
+
+.firstPart {
+  padding: 3.5%;
+  width: calc(100% - 58%);
+}
+
+.MainTitle {
+  font-size: 4rem;
+  font-family: Segoe UI, sans-serif;
+  font-weight: 700;
+  color: #000000;
+
+}
+
+.imageText::after {
+  content: "";
+  width: 60.95px;
+  height: 58.78px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../../Assets/icons/listIcon.svg");
+}
+
+.imageText {
+  position: relative;
+  margin: 0 50px 0 0;
+}
+
+.subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #7A7A7A;
+}
+.secondPart {
+  width: 61%;
+}
+.button {
+  padding: 2% 10%;
+  background: #15AF00;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 10%;
+  outline: none;
+  border: none;
+}
+
+@media (min-width: 921px) {
+  .wrapper {
+    padding: 0;
+  }
+  .MainTitle {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .firstPart {
+    padding: 0 3% 3% 3%;
+  }
+  .subtext {
+    font-size: 22px;
+  }
+  .button {
     margin-top: 5%;
-}
-img{
-    max-width: 90%;
-}
-.firstPart{
-    padding: 3.5%;
-}
-.MainTitle{
-    margin-top: 100px;
-    font-size: 4rem;
-    font-family: Segoe UI, sans-serif;
-    font-weight: 700;
-    color: #000000;
-
-}
-.imageText::after{
-    content: "";
-    width: 60.95px;
-    height: 58.78px;
-    position: absolute;
-    background-image: url("../../Assets/icons/listIcon.svg");
-}
-
-.subtext{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 34px;
-
-    color: #7A7A7A;
-}
-.button{
-    padding: 2% 10%;
-    background: #15AF00;
-    border-radius: 3px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 10%;
-    outline: none;
-    border: none;
+  }
 }

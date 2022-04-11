@@ -39,7 +39,15 @@ const SwiperCards = ({margin, padding}) => {
         }];
     return (
         <div className={padding}>
-            <Swiper navigation={true} modules={[Navigation]} slidesPerView={3} spaceBetween={margin}
+            <Swiper navigation={true} modules={[Navigation]} spaceBetween={margin}
+                    breakpoints={{
+                        900: {
+                            slidesPerView: 3,
+                        },
+                        375: {
+                            slidesPerView: 2,
+                        }
+                    }}
                     className="mySwiper">
                 {recomendate.map((item) => (
                     <SwiperSlide>
