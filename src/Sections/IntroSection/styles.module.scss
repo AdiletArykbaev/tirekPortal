@@ -50,6 +50,10 @@ img {
 }
 .secondPart {
   width: 61%;
+  img {
+    width: 100%;
+    max-width: unset;
+  }
 }
 .button {
   padding: 2% 10%;

@@ -1,7 +1,5 @@
 .wrapper {
   padding: 5%;
-
-
 }
 
 .content_wrapper {
@@ -13,7 +11,7 @@
 }
 
 .title {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -35,3 +33,5 @@
   flex-direction: column;
   row-gap: 40px;
 }
+
+/*# sourceMappingURL=styles.module.css.map */
