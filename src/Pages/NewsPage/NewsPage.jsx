@@ -2,7 +2,8 @@ import React from 'react'
 import styles from "./styles.module.scss"
 import { fourteen, one } from '../../Assets/images/gallery'
 import News from '../../Сomponents/organisms/News/News';
-import { LastNews,Recomendate} from '../../Сomponents/moleculas';
+import { LastNews} from '../../Сomponents/moleculas';
+import { NewsCard } from '../../Сomponents/atoms';
 const NewsPage = () => {
   const news = {
       title:"20 НУЖДАЮЩИМСЯ СЕМЬЯМ, КОТОРЫЕ СОСТОЯ НА УЧЕТЕ НАШЕГО ФОНДА, БЫЛА ОКАЗАНА ПОМОЩЬ В ВИДЕ ПРОДУКТОВЫХ",
@@ -56,6 +57,8 @@ const recomendate = [{
     title:"Holoplot",
     date:"12/12/2020"
 }]
+
+
   return (
     <div className={styles.wrapper}>
         <h1 className={styles.title}>
@@ -74,7 +77,7 @@ const recomendate = [{
             </div>
             <div className={styles.recomendation}>
                 {recomendate.map((item)=>{
-                    return <Recomendate image={item.image} title={item.title} text={item.text} date={item.date} />
+                    return <NewsCard image={item.image} title={item.title} subtitle={item.text} date={item.date} />
                 })}
             </div>
             </div>

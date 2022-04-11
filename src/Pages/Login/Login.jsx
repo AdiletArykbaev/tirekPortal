@@ -6,7 +6,7 @@ import axios from '../../Requests/axios'
 const Login = () => {
  const userRef = useRef(null);
  const errRef = useRef()
- const [login,setLogin] = useState("")
+ const [username,setUsername] = useState("")
  const [password,setPassword] = useState("")
  const [errMsg,setErrMsg] = useState("")
  const [success,setSuccess] = useState(false)
@@ -16,14 +16,14 @@ const Login = () => {
  },[])
  useEffect(()=>{
    setErrMsg("")
- },[login,password])
+ },[username,password])
  
 
  const handlerSubmit = async(e)=>{
    e.preventDefault()
   try{
     const response = await axios.post(LOGIN_URL,
-        JSON.stringify({login,password}),
+        JSON.stringify({username,password}),
         {
           headers:{"Content-Type":"application/json"}
         }
@@ -39,7 +39,7 @@ const Login = () => {
       <div className={styles.content_wrapper}>
         <form onSubmit={handlerSubmit}>
           <input ref={userRef} onChange={(e)=>{
-            setLogin(e.target.value)
+            setUsername(e.target.value)
           }} placeholder='имя пользывателя' type="login" />
           <input onChange={(e)=>{
             setPassword(e.target.value)
