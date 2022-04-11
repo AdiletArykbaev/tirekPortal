@@ -52,7 +52,7 @@ const Header = () => {
 }, [])
 console.log(color)
   return (
-    <div className={styles.component_wrapper} style={{borderBottom:color}} >]
+    <div className={styles.component_wrapper} style={{borderBottom:color}} >
     <MinMedium>
     <div className="wrapper">
         <div className={styles.pageWrapper}>

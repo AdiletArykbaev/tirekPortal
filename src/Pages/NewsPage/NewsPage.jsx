@@ -77,7 +77,7 @@ const recomendate = [{
             </div>
             <div className={styles.recomendation}>
                 {recomendate.map((item)=>{
-                    return <NewsCard image={item.image} title={item.title} subtitle={item.text} date={item.date} />
+                    return <NewsCard style={{marginTop:"5%"}} image={item.image} title={item.title} subtitle={item.text} date={item.date} />
                 })}
             </div>
             </div>
