@@ -1,16 +1,15 @@
 import React from 'react';
-import girl from '../../../Assets/images/newscard/girl.png';
 import styles from './newsCard.module.scss';
 import {Button} from "@mui/material";
 
-const NewsCard = () => {
+const NewsCard = ({title,subtitle,image}) => {
     return (
+
         <div className={styles.box}>
-            <img className={styles.img} src={girl} alt=""/>
+            <img className={styles.img} src={image} alt=""/>
             <div className={styles.content}>
-                <h3 className={styles.title}>Помощь в получении образования для детей-сирот</h3>
-                <p className={styles.subtitle}>Мы помогаем подросткам в детских домах КР, а также выпускникам
-                    сиротских...</p>
+                <h3 className={styles.title}>{title}</h3>
+                <p className={styles.subtitle}>{subtitle}</p>
                 <div className={styles.btnBox}>
                     <Button variant="text" className={styles.btn}>
                         Подробнее
