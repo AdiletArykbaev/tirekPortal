@@ -1,0 +1,43 @@
+.title {
+  font-weight: 700;
+  margin: 0 0 20px;
+  font-size: 48px;
+  line-height: 177.9%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin: 20px 0 0;
+  padding: 0;
+  width: 29%;
+}
+
+.item {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  color: #4D4D4D;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.box {
+  width: 70%;
+}
+
+.small {
+  position: relative;
+  padding: 0 65px;
+}

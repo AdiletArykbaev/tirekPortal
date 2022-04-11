@@ -5,6 +5,7 @@ import {MainPage, Login, ContactPage, Gallery, PageNotFound, NewsPage} from './P
 import "@fancyapps/ui/dist/fancybox.css";
 import {NewsCard} from "./Сomponents/atoms"
 import {useEffect} from "react";
+import 'remixicon/fonts/remixicon.css'
 
 function App() {
     const location = useLocation();
