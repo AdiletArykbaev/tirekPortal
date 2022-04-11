@@ -1,0 +1,31 @@
+.wrapper {
+  padding: 2% 5%;
+}
+
+.title {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 177.9%;
+  /* or 85px */
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.lastNews {
+  margin-top: 5%;
+}
+
+.subcontent {
+  display: flex;
+}
+.subcontent .pagination {
+  width: 80%;
+}
+.subcontent .recomendation {
+  width: 20%;
+  margin-left: 15%;
+}
+
+/*# sourceMappingURL=styles.module.css.map */
