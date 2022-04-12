@@ -27,3 +27,31 @@
   position: relative;
   padding: 0 100px;
 }
+
+@media (max-width: 1400px) {
+  .container {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .title {
+    font-size: 42px;
+  }
+  .container {
+    padding: 0 45px;
+  }
+  .subtitle {
+    font-size: 17px;
+    margin: 0 0 50px;
+  }
+}
+
+@media (max-width: 920px) {
+  .title {
+    font-size: 36px;
+  }
+  .subtitle {
+    margin: 0 0 30px;
+  }
+}

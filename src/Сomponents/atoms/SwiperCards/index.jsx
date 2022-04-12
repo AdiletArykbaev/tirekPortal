@@ -7,7 +7,7 @@ import {NewsCard} from "../index";
 import {fourteen, one} from "../../../Assets/images/gallery";
 import styles from "../../../Sections/NewsMain/newsMain.module.scss";
 
-const SwiperCards = ({margin, padding}) => {
+const SwiperCards = ({margin, padding, breakpoints}) => {
     const recomendate = [{
         image: one,
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ",
@@ -40,14 +40,7 @@ const SwiperCards = ({margin, padding}) => {
     return (
         <div className={padding}>
             <Swiper navigation={true} modules={[Navigation]} spaceBetween={margin}
-                    breakpoints={{
-                        900: {
-                            slidesPerView: 3,
-                        },
-                        375: {
-                            slidesPerView: 2,
-                        }
-                    }}
+                    breakpoints={breakpoints}
                     className="mySwiper">
                 {recomendate.map((item) => (
                     <SwiperSlide>

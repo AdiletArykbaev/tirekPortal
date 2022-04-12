@@ -30,7 +30,7 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("../../Assets/icons/listIcon.svg");
+  background: url("../../Assets/icons/listIcon.svg") center/cover no-repeat;
 }
 
 .imageText {
@@ -71,7 +71,7 @@ img {
   border: none;
 }
 
-@media (min-width: 921px) {
+@media (max-width: 1100px) {
   .wrapper {
     padding: 0;
   }
@@ -91,6 +91,32 @@ img {
 
   .button {
     margin-top: 5%;
+  }
+}
+@media (max-width: 920px) {
+  .MainTitle {
+    font-size: 2.5rem;
+  }
+
+  .imageText {
+    margin: 0 35px 0 0;
+  }
+  .imageText::after {
+    width: 50px;
+    height: 42px;
+  }
+
+  .subtext {
+    font-size: 20px;
+  }
+  .subtext br {
+    display: none;
+  }
+
+  .button {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
   }
 }
 

@@ -12,7 +12,6 @@
   font-size: 24px;
   line-height: 38px;
   color: #000000;
-  margin: 0;
   margin-bottom: 8px;
 }
 
@@ -22,4 +21,25 @@
   line-height: 28px;
   color: #000000;
   margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    column-gap: 5px;
+  }
+  .title {
+    font-size: 20px;
+    margin: 0;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 920px) {
+  .title {
+    font-size: 18px;
+  }
+  .subtitle {
+    height: 56px;
+  }
 }

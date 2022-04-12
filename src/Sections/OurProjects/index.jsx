@@ -4,6 +4,16 @@ import NavigateBtn from "../../Сomponents/atoms/NavigateBtn";
 import SwiperCards from "../../Сomponents/atoms/SwiperCards";
 
 const OurProjects = () => {
+    const swiperBreakpoints = {
+        1600: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        769: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+    };
     return (
         <div className={styles.wrapper}>
             <div className="wrapper">
@@ -34,7 +44,7 @@ const OurProjects = () => {
                         </li>
                     </ul>
                     <div className={styles.box}>
-                        <SwiperCards padding={styles.small} margin={30}/>
+                        <SwiperCards padding={styles.small} margin={30} breakpoints={swiperBreakpoints}/>
                     </div>
                 </div>
             </div>
