@@ -2,7 +2,9 @@ import React from 'react'
 import styles from "./styles.module.scss"
 import { useState,useEffect,useRef} from 'react'
 import axios from '../../Requests/axios'
-import {Route, Routes, useNavigate} from "react-router-dom"
+import { useNavigate} from "react-router-dom"
+import { connect } from 'react-redux'
+import { loginSuccess } from '../../Store/Actions/AuthActions'
 
 const Login = ({state,dispatch}) => {
  const userRef = useRef(null);
@@ -34,8 +36,7 @@ const handlerSubmit = async(e)=>{
       )
      console.log(JSON.stringify(response?.data))
      setSuccess(true)
-  
-     
+     loginSuccess()
   }catch(e){
     console.log(e)
   }
@@ -63,5 +64,11 @@ const handlerSubmit = async(e)=>{
   )
 }
 
+const mapStateToProps = (state)=>({
+  auth:state.auth
+})
 
-export default Login
+const mapDispatchToProps = {
+  loginSuccess
+} 
+export default connect(mapStateToProps,mapDispatchToProps)(Login)

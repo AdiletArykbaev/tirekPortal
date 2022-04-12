@@ -11,11 +11,10 @@ export  const loginReducer = (state=initialState,action)=>{
             case LOGIN:
                 return {
                     ...state,
-                    userData:{},
                    
                 }
             case LOGIN_SUCCES:
-                
+                return state.auth = true;
             default:
               return state
         }
