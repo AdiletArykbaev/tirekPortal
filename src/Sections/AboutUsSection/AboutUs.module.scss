@@ -10,3 +10,9 @@
 .secondPart{
     margin-left: 5%;
 }
+
+@media (max-width: 920px) {
+    .secondPart {
+        margin: 0 0 0 2%;
+    }
+}

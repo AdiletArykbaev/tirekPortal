@@ -9,6 +9,7 @@
 .pageWrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 2% 0;
   z-index: 1000;
@@ -32,6 +33,126 @@
 .button:hover {
   background-color: #14AD02;
   color: #fff;
+}
+
+.burger {
+  font-size: 26px;
+  color: #2B292D;
+  z-index: 2222222;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.email i {
+  font-size: 16px;
+}
+.email a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.popup {
+  z-index: 99999999;
+  height: 0;
+  background: #F8FFFF;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  animation: closeMenu 0.3s linear;
+}
+.popup ul {
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  padding: 0 0 50px;
+  border-bottom: #C4C4C4 1px solid;
+}
+.popup ul li {
+  margin: 0;
+}
+.popup ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.popupOpen {
+  overflow: hidden;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background: #F8FFFF;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  animation: openMenu 0.3s linear;
+}
+.popupOpen ul {
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  padding: 0 0 50px;
+  border-bottom: #C4C4C4 1px solid;
+}
+.popupOpen ul li {
+  margin: 0;
+}
+.popupOpen ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.popupContent {
+  padding: 50px 20px 70px;
+}
+
+@keyframes openMenu {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: calc(100vh - 80px);
+  }
+}
+@keyframes closeMenu {
+  0% {
+    height: calc(100vh - 80px);
+  }
+  100% {
+    height: 0;
+  }
+}
+@media (max-width: 1300px) {
+  .logoBlock {
+    width: 130px;
+  }
+
+  .button {
+    font-size: 17px;
+    height: 32px;
+    margin: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .button {
+    height: 28px;
+    font-size: 15px;
+  }
+
+  .component_wrapper {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.module.css.map */

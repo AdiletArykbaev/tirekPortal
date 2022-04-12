@@ -4,6 +4,7 @@ import { useState,useEffect,useRef} from 'react'
 import axios from '../../Requests/axios'
 import {Route, Routes, useNavigate} from "react-router-dom"
 import Admin from '../AdminPage/Admin'
+import { MapStateToProps } from 'react-redux'
 
 const Login = () => {
  const userRef = useRef(null);
@@ -12,7 +13,6 @@ const Login = () => {
  const [password,setPassword] = useState("")
  const [errMsg,setErrMsg] = useState("")
  const [success,setSuccess] = useState(false)
- import { MapStateToProps } from 'react-redux'
 
  const LOGIN_URL = "/login"
  const navigate = useNavigate()

@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.content_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.secondPart {
+  margin-left: 5%;
+}
+
+@media (max-width: 920px) {
+  .secondPart {
+    margin: 0 0 0 2%;
+  }
+}
+
+/*# sourceMappingURL=AboutUs.module.css.map */
