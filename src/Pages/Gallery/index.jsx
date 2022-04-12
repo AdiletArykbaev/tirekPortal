@@ -5,8 +5,14 @@ import {
 import {Fancybox} from "@fancyapps/ui";
 import './gallery.css';
 import NavigateBtn from "../../Сomponents/atoms/NavigateBtn";
+import {MaxSmall, MinSmall} from "../../utils/mediaQuiries";
+import {Swiper, SwiperSlide} from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import {Pagination} from "swiper";
 
 const Gallery = ({page}) => {
+    const photos = [one, two, three, four, five, six, seven, vosem, nine, ten, eleven, twelwe, thirteen, fourteen, fifteen, last];
     return (
         <>
 
@@ -74,18 +80,37 @@ const Gallery = ({page}) => {
                             </div>
                         </div>
                     </div>
-                    : <div className="wrapper">
-                        <h1 className="gallery__title">Фотогалерея</h1>
-                        <NavigateBtn address={'/gallery'} text={'Все фотографии'}/>
-                        <div className='gallery__content'>
-                            <img data-fancybox="gallery" data-src={one} className="gallery__small" src={one} alt="asd"/>
-                            <img data-fancybox="gallery" data-src={two} className="gallery__mid" src={two} alt=""/>
-                            <div className="gallery__content_col">
-                                <img data-fancybox="gallery" data-src={three} src={three} alt=""/>
-                                <img data-fancybox="gallery" data-src={four} src={four} alt=""/>
-                            </div>
+                    : <>
+
+                        <div className="wrapper">
+                            <h1 className="gallery__title">Фотогалерея</h1>
+                            <NavigateBtn address={'/gallery'} text={'Все фотографии'}/>
+                            <MinSmall>
+                                <div className='gallery__content'>
+                                    <img data-fancybox="gallery" data-src={one} className="gallery__small" src={one}
+                                         alt="asd"/>
+                                    <img data-fancybox="gallery" data-src={two} className="gallery__mid" src={two} alt=""/>
+                                    <div className="gallery__content_col">
+                                        <img data-fancybox="gallery" data-src={three} src={three} alt=""/>
+                                        <img data-fancybox="gallery" data-src={four} src={four} alt=""/>
+                                    </div>
+                                </div>
+                            </MinSmall>
+                            <MaxSmall>
+                                <div className="gallery__swiper">
+                                    <Swiper pagination={true} modules={[Pagination]} slidesPerView={1} className="mySwiper">
+                                        {
+                                            photos.map((item) => (
+                                                <SwiperSlide>
+                                                    <img className="gallery__swiper_img" src={item} alt=""/>
+                                                </SwiperSlide>
+                                            ))
+                                        }
+                                    </Swiper>
+                                </div>
+                            </MaxSmall>
                         </div>
-                    </div>
+                    </>
             }
         </>
     );

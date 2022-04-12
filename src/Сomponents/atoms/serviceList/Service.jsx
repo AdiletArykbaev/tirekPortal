@@ -5,7 +5,7 @@ const Service = ({title, text, beforeImage}) => {
     return (
         <div className={styles.wrapper}>
             <div>
-                <img src={beforeImage} alt="beforeImage"/>
+                <img className={styles.img} src={beforeImage} alt="beforeImage"/>
             </div>
             <div>
                 <h2 className={styles.title}>{title}</h2>

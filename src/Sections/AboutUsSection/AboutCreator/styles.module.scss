@@ -60,11 +60,41 @@
   .text {
     font-size: 17px;
     width: 60%;
+    line-height: 150%;
   }
   .image {
     width: 35%;
   }
   .author {
     font-size: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .secondBlog {
+    padding: 5% 0 0;
+  }
+  .author {
+    margin:  15px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .author {
+    margin: 0;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
   }
 }

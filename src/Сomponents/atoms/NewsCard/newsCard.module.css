@@ -60,4 +60,51 @@
   color: #6A6A6A;
 }
 
+@media (max-width: 1400px) {
+  .content {
+    padding: 24px 20px 32px;
+  }
+
+  .date {
+    margin: 0;
+  }
+
+  .title {
+    margin: 22px 0 10px;
+  }
+
+  .btnBox button {
+    font-size: 12px;
+  }
+  .btnBox button svg {
+    width: 12px;
+    height: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .content {
+    padding: 13px 13px 30px;
+  }
+
+  .date {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 210.9%;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 6px 0 14px;
+  }
+
+  .subtitle {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+
 /*# sourceMappingURL=newsCard.module.css.map */

@@ -244,3 +244,248 @@
         column-gap: 10px;
     }
 }
+
+@media (max-width: 920px) {
+    .footer__menu {
+        align-items: flex-start;
+    }
+
+    .footer__title {
+        line-height: 130%;
+    }
+}
+
+@media (max-width: 904px) {
+    .footer__title {
+        height: 63px;
+        padding: 0;
+        margin: 0 0 10px;
+    }
+
+    .footer__menu a {
+        font-size: 15px;
+    }
+
+    .footer__contact {
+
+    }
+
+    .footer__left {
+        column-gap: 5px;
+    }
+
+    .footer__left a {
+        font-size: 11px;
+    }
+
+    .footer__contact p {
+        font-size: 11px;
+    }
+
+    .footer__right {
+        column-gap: 5px;
+    }
+
+    .footer__icons {
+        column-gap: 4px;
+    }
+
+    .footer__icons img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer__row {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        padding: 0 0 50px;
+    }
+
+    .footer__menu {
+        order: 3;
+        width: 100%;
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    .footer__row img {
+        width: 30%;
+    }
+
+    .footer__title {
+        height: auto;
+        padding: 0 0 10px;
+    }
+
+    .footer__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .footer__form form {
+        width: 100%;
+        margin: 15px 0 0;
+    }
+
+    .footer__btn {
+        height: 40px;
+    }
+
+    .footer__contact {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer__row img {
+        width: 160px;
+        margin: 0 0 20px;
+    }
+
+    .footer__form {
+        width: 80%;
+    }
+
+    .footer__menu {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .footer__row ul {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer::after {
+        bottom: 10%;
+    }
+
+    .footer__contact {
+        position: relative;
+    }
+
+    .footer__right {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        padding: 50px 0 8px;
+    }
+
+    .footer__row {
+        padding: 0 0 40px;
+        row-gap: 40px;
+    }
+
+    .footer__row img {
+        width: 146px;
+        height: 50px;
+        margin: 0;
+    }
+
+    .footer__title {
+        padding: 0 0 2px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 21px;
+        margin: 0 0 15px;
+    }
+
+    .footer__form {
+        width: 80%;
+    }
+
+    .footer__form form {
+        margin: 10px 0 0;
+        flex-direction: row;
+    }
+
+    .footer__form label {
+        width: 65%;
+    }
+
+    .footer__input {
+        height: 32px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 10px;
+        padding: 5px 7px 8px;
+    }
+
+    .footer__input::placeholder {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .footer__btn {
+        height: 32px;
+        width: 33%;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .footer__menu a {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 130%;
+    }
+
+    .footer__menu p {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 130%;
+    }
+
+    .footer__menu li {
+        height: 15px;
+    }
+
+    .footer__menu li:not(:last-child) {
+        margin: 0 0 4px;
+    }
+    .footer__left a {
+        font-weight: 400;
+        font-size: 6px;
+        line-height: 10px;
+    }
+    .footer__contact {
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__contact p {
+        font-weight: 400;
+        font-size: 6px;
+        line-height: 130%;
+    }
+    .footer__icons {
+        height: 27px;
+    }
+    .footer__center {
+        margin: 5px 0 0;
+    }
+    .footer__icons img {
+        width: 8px;
+        height: 8px;
+    }
+    .footer__right p {
+        margin: 0;
+    }
+    .footer::after {
+        bottom: 5%;
+    }
+}

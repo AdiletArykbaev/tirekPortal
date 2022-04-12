@@ -76,3 +76,36 @@
     width: 100%;
   }
 }
+
+@media (max-width: 650px) {
+  .small {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 32px;
+    margin: 40px 0 10px;
+  }
+  .small {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 50px 0 0;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 0 20px;
+  }
+  .item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
