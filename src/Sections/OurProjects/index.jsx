@@ -9,6 +9,10 @@ const OurProjects = () => {
             slidesPerView: 3,
             spaceBetween: 30,
         },
+        1300: {
+            slidesPerView: 2,
+            spaceBetween: 80,
+        },
         650: {
             slidesPerView: 2,
             spaceBetween: 20,
