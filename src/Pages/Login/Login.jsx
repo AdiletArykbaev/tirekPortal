@@ -12,6 +12,8 @@ const Login = () => {
  const [password,setPassword] = useState("")
  const [errMsg,setErrMsg] = useState("")
  const [success,setSuccess] = useState(false)
+ import { MapStateToProps } from 'react-redux'
+
  const LOGIN_URL = "/login"
  const navigate = useNavigate()
  useEffect(()=>{
@@ -58,7 +60,6 @@ const Login = () => {
         </form>
      </div>
        <Routes>
-         <Route path='/admin' element={<Admin/>}></Route>
        </Routes>
     </div>
   )
