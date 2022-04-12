@@ -7,13 +7,14 @@ import {NewsCard} from "./Сomponents/atoms"
 import {useEffect} from "react";
 import 'remixicon/fonts/remixicon.css'
 
-function App() {
+function App({store}) {
     const location = useLocation();
     useEffect(() => {
         document.documentElement.style.scrollBehavior = "unset";
         window.scrollTo(0, 0);
         document.documentElement.style.scrollBehavior = "smooth";
     }, [location.pathname]);
+    console.log(store.getState())
     return (
         <div className="App">
             <input type="text"/>

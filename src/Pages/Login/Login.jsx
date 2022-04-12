@@ -3,10 +3,8 @@ import styles from "./styles.module.scss"
 import { useState,useEffect,useRef} from 'react'
 import axios from '../../Requests/axios'
 import {Route, Routes, useNavigate} from "react-router-dom"
-import Admin from '../AdminPage/Admin'
-import { MapStateToProps } from 'react-redux'
 
-const Login = () => {
+const Login = ({state,dispatch}) => {
  const userRef = useRef(null);
  const errRef = useRef()
  const [username,setUsername] = useState("")
@@ -24,7 +22,8 @@ const Login = () => {
  },[username,password])
  
 
- const handlerSubmit = async(e)=>{
+
+const handlerSubmit = async(e)=>{
    e.preventDefault()
   try{
     const response = await axios.post(LOGIN_URL,
@@ -59,10 +58,10 @@ const Login = () => {
           <button type='submit'> войти</button>
         </form>
      </div>
-       <Routes>
-       </Routes>
+     
     </div>
   )
 }
+
 
 export default Login

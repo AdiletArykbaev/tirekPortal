@@ -15,10 +15,11 @@ const container = document.getElementById("app")
 const root = ReactDOM.createRoot(container);
 
 
+console.log(store)
 root.render(
     <BrowserRouter>
         <Provider store={store}>
-            <App/>
+            <App store={store}/>
         </Provider>
     </BrowserRouter>
 );
