@@ -63,7 +63,7 @@
   width: 100vw;
   overflow: hidden;
   position: absolute;
-  top: 80px;
+  top: 100%;
   left: 0;
   animation: closeMenu 0.3s linear;
 }
@@ -88,10 +88,10 @@
 .popupOpen {
   overflow: hidden;
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 2%);
   background: #F8FFFF;
   position: absolute;
-  top: 80px;
+  top: 100%;
   left: 0;
   animation: openMenu 0.3s linear;
 }
@@ -122,12 +122,12 @@
     height: 0;
   }
   100% {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 2%);
   }
 }
 @keyframes closeMenu {
   0% {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 2%);
   }
   100% {
     height: 0;
@@ -152,6 +152,15 @@
 
   .component_wrapper {
     height: auto;
+  }
+}
+@media (max-width: 425px) {
+  .popupOpen ul li a {
+    font-size: 16px;
+  }
+
+  .popup ul li a {
+    font-size: 16px;
   }
 }
 

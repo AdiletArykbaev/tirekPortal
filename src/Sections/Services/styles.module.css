@@ -53,5 +53,37 @@
     font-size: 36px;
   }
 }
+@media (max-width: 576px) {
+  .content_wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .secondPart {
+    width: 100%;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 26.7px;
+  }
+}
+@media (max-width: 425px) {
+  .content_wrapper {
+    row-gap: 20px;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 0 22px;
+  }
+
+  .secondPart {
+    row-gap: 20px;
+  }
+}
 
 /*# sourceMappingURL=styles.module.css.map */

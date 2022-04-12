@@ -17,6 +17,10 @@
   .secondPart {
     margin: 0 0 0 2%;
   }
+
+  .content_wrapper {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=AboutUs.module.css.map */

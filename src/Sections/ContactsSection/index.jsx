@@ -7,6 +7,7 @@ import facebook from '../../Assets/images/facebook.png';
 import youtube from '../../Assets/images/youtube.png';
 import twitter from '../../Assets/images/twitter.png';
 import Map from "../../Сomponents/atoms/Map";
+import {MaxMedium, MaxSmall, MinSmall} from "../../utils/mediaQuiries";
 
 const Contacts = () => {
     return (
@@ -17,15 +18,17 @@ const Contacts = () => {
                     <div className={styles.row}>
                         <div className={styles.box}>
                             <div>
-                                <p className={styles.text}>Для обращения в наш Фонд просим Вас внимательно ознакомиться с
-                                    разделом "Обращение"</p>
+                                <p className={styles.text}>Для обращения в наш Фонд просим Вас внимательно ознакомиться
+                                    с
+                                    разделом "Обращение".</p>
                                 <p className={styles.text}>Нажмите на кнопку “Обратиться”, чтобы узнать подробнее об
                                     инструкциях.</p>
                             </div>
                             <button className={styles.btn}>Обратиться</button>
                         </div>
                         <div className={styles.box}>
-                            <p className={styles.info}><img src={geo} alt=""/> 720021, Кыргызстан, ул. Ибраимова 96, Бишкек
+                            <p className={styles.info}><img src={geo} alt=""/> 720021, Кыргызстан, ул. Ибраимова 96,
+                                Бишкек
                             </p>
                             <p className={styles.info}><img src={email} alt=""/>tirek.org@gmail.com</p>
                             <div className={styles.icons}>
@@ -34,7 +37,12 @@ const Contacts = () => {
                                 <img src={youtube} alt=""/>
                                 <img src={twitter} alt=""/>
                             </div>
-                            <Map height={260} width={'100%'}/>
+                            <MinSmall>
+                                <Map height={260} width={'100%'}/>
+                            </MinSmall>
+                            <MaxSmall>
+                                <Map height={150} width={'100%'}/>
+                            </MaxSmall>
                         </div>
                     </div>
                 </div>

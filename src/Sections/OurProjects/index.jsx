@@ -9,14 +9,17 @@ const OurProjects = () => {
             slidesPerView: 3,
             spaceBetween: 30,
         },
-        769: {
+        650: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
+        577: {
+            slidesPerView: 1,
+        }
     };
     return (
         <div className={styles.wrapper}>
-            <div className="wrapper">
+            <div className="wrapper mainSwiper">
                 <h2 className={styles.title}>Наши проекты</h2>
                 <NavigateBtn text={'Все проекты'} address={'projects'}/>
                 <div className={styles.row}>
