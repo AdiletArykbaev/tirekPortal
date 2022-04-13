@@ -22,6 +22,7 @@ const Admin = () => {
             headers:{"Content-Type":"application/json"}
           }
         )
+        console.log(response)
     }
 
     function dragStartHandler(e){
@@ -36,7 +37,7 @@ const Admin = () => {
       e.preventDefault()
       let files = [...e.dataTransfer.files]
       console.log(files)
-          
+
     }
   return (
     <div className={styles.wrapper}>
