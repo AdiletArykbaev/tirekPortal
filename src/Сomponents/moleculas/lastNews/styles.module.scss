@@ -1,32 +1,26 @@
-.wrapper{
-    height: 163px;
-    width: 60%;
-    border-bottom: 1px solid #DADADA;
-    .date{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 210.9%;
-        /* identical to box height, or 34px */
+.wrapper {
+  height: 163px;
+  border-bottom: 1px solid #DADADA;
 
-        letter-spacing: 0.01em;
+  .date {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 210.9%;
+    letter-spacing: 0.01em;
+    color: #6A6A6A;
+  }
 
-        color: #6A6A6A;
-
-    }
-    .body{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 160%;
-        /* or 38px */
-
-        text-align: justify;
-        letter-spacing: 0.01em;
-        text-transform: capitalize;
-
-        color: #000000;
-    }
+  .body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 160%;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #000000;
+  }
 }

@@ -1,28 +1,63 @@
-.wrapper{
-    padding: 2% 5%;
+.wrapper {
+  padding: 2% 5%;
 }
-.title{
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 177.9%;
-    /* or 85px */
 
-    letter-spacing: 0.01em;
+.title {
+  font-family: 'Segoe UI', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 177.9%;
+  /* or 85px */
 
-    color: #000000;
+  letter-spacing: 0.01em;
+
+  color: #000000;
 }
-.lastNews{
-    margin-top: 5%;
+
+.lastNews {
+  margin-top: 5%;
 }
-.subcontent{
-    display: flex;
-    .pagination{
-        width: 70%;
-    }
-    .recomendation{
-        width: 30%;
-        margin-left: 15%;
-    }
+
+.subcontent {
+  display: flex;
+  justify-content: space-between;
+
+  .pagination {
+    width: 69.9%;
+  }
+
+  .recomendation {
+    width: 23.5%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 921px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 28px;
+  }
 }
