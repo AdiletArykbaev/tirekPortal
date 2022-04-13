@@ -2,7 +2,8 @@
   height: 163px;
   border-bottom: 1px solid #DADADA;
 }
-.wrapper .date {
+
+.date {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -11,7 +12,8 @@
   letter-spacing: 0.01em;
   color: #6A6A6A;
 }
-.wrapper .body {
+
+.body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -21,6 +23,95 @@
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: #000000;
+}
+
+@media (max-width: 1500px) {
+  .body {
+    font-size: 23px;
+  }
+
+  .wrapper {
+    height: auto;
+  }
+}
+@media (max-width: 1300px) {
+  .body {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1100px) {
+  .body {
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 15px;
+    margin: 0;
+    padding: 0 0 15px;
+  }
+}
+@media (max-width: 921px) {
+  .body {
+    font-size: 18px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .wrapper:last-child {
+    border: none;
+  }
+}
+@media (max-width: 850px) {
+  .body {
+    font-size: 17px;
+  }
+
+  .date {
+    font-size: 13px;
+    padding: 0 0 12px;
+  }
+}
+@media (max-width: 720px) {
+  .body {
+    font-size: 15px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+}
+@media (max-width: 620px) {
+  .body {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .date {
+    font-size: 11px;
+    padding: 0 0 10px;
+  }
+}
+@media (max-width: 500px) {
+  .body {
+    font-size: 13px;
+  }
+
+  .date {
+    font-size: 10px;
+    padding: 0 0 8px;
+  }
+}
+@media (max-width: 425px) {
+  .body {
+    font-size: 12px;
+  }
+
+  .date {
+    font-size: 8px;
+    padding: 0 0 5px;
+  }
 }
 
 /*# sourceMappingURL=styles.module.css.map */

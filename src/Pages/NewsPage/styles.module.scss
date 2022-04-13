@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 2% 5%;
+  padding: 2% 5% 70px;
 }
 
 .title {
@@ -8,11 +8,13 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 177.9%;
-  /* or 85px */
-
   letter-spacing: 0.01em;
-
   color: #000000;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .lastNews {
@@ -22,19 +24,38 @@
 .subcontent {
   display: flex;
   justify-content: space-between;
+}
 
-  .pagination {
-    width: 69.9%;
-  }
+.pagination {
+  width: 69%;
+}
 
-  .recomendation {
-    width: 23.5%;
-  }
+.recomendation {
+  width: 23.5%;
+}
+
+.subtitle {
+  font-size: 36px;
+  line-height: 180%;
+  letter-spacing: 0.01em;
 }
 
 @media (max-width: 1500px) {
   .title {
     font-size: 42px;
+  }
+  .box {
+    img {
+      height: 260px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .box {
+    img {
+      height: 220px;
+    }
   }
 }
 
@@ -42,11 +63,67 @@
   .title {
     font-size: 40px;
   }
+  .subtitle {
+    font-size: 32px;
+  }
+  .pagination {
+    width: 65%;
+  }
+  .recomendation {
+    width: 27.5%;
+  }
+  .box {
+    img {
+      height: 210px;
+    }
+  }
 }
 
 @media (max-width: 921px) {
   .title {
     font-size: 36px;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
+  .pagination {
+    width: 100%;
+  }
+  .box {
+    width: calc(100% / 3.2);
+
+    img {
+      height: 230px;
+    }
+  }
+  .recomendation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    flex-wrap: wrap;
+  }
+  .subcontent {
+    flex-direction: column-reverse;
+    row-gap: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .box {
+    width: calc(100% / 3.2);
+
+    img {
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .box {
+    img {
+      height: 210px;
+    }
   }
 }
 
@@ -54,10 +131,63 @@
   .title {
     font-size: 32px;
   }
+  .subtitle {
+    font-size: 24px;
+  }
+  .box {
+    img {
+      height: 240px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .box {
+    width: calc(100% / 2.1);
+  }
 }
 
 @media (max-width: 620px) {
   .title {
     font-size: 28px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+  .box {
+    img {
+      height: 190px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .box {
+    img {
+      height: 180px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .box {
+    margin: 0 auto;
+    width: 70vw;
+
+    img {
+      height: calc(70vw - 40px);
+    }
+  }
+  .title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 14px;
   }
 }

@@ -5,11 +5,7 @@ import combineReducers from "./Reducers/index"
 
 
 
-const middleware = [thunk]
-const store = createStore(combineReducers)
+const middleware = [thunk];
+const store = createStore(combineReducers);
 
 export default store
-
-
-
-
