@@ -1,19 +1,20 @@
 import './App.css';
 import {Header, Footer} from './Сomponents/moleculas';
 import {Routes, Route, useLocation,} from "react-router-dom"
-import {MainPage, Login, ContactPage, Gallery, PageNotFound, NewsPage} from './Pages';
+import {MainPage, Login, ContactPage, Gallery, PageNotFound, NewsPage, Projects,Admin} from './Pages';
 import "@fancyapps/ui/dist/fancybox.css";
 import {NewsCard} from "./Сomponents/atoms"
 import {useEffect} from "react";
 import 'remixicon/fonts/remixicon.css'
 
-function App() {
+function App({store}) {
     const location = useLocation();
     useEffect(() => {
         document.documentElement.style.scrollBehavior = "unset";
         window.scrollTo(0, 0);
         document.documentElement.style.scrollBehavior = "smooth";
     }, [location.pathname]);
+    console.log(store.getState())
     return (
         <div className="App">
             <input type="text"/>
@@ -26,7 +27,10 @@ function App() {
                     <Route path={"/appeal"} element={<ContactPage/>}/>
                     <Route path={"/gallery"} element={<Gallery page={true}/>}/>
                     <Route path={"/news"} element={<NewsPage/>}/>
-                    <Route component={PageNotFound}/>
+                    <Route path={"/projects"} element={<Projects/>}/>
+                    <Route path='/admin' element={<Admin/>}></Route>
+
+                    <Route path='' component={PageNotFound}/>
                 </Routes>
             </div>
             <Footer/>

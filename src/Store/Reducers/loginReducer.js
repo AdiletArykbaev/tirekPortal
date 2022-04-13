@@ -1,14 +1,20 @@
-import { GET_LOGIN } from "../types"
+import { LOGIN_SUCCES, LOGIN} from "../types"
 const initialState = {
-    loginValue : "имя пользователя",
-    password:"пароль"
+    auth:false,
+    token:"token"
 }
 
-const loginReducer = (state=initialState,action)=>{
+
+
+export  const loginReducer = (state=initialState,action)=>{
         switch(action.type){
-            case GET_LOGIN:
-               return state.loginValue
-            
+            case LOGIN:
+                return {
+                    ...state,
+                   
+                }
+            case LOGIN_SUCCES:
+                return state.auth = true;
             default:
               return state
         }

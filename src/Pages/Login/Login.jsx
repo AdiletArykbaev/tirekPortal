@@ -2,15 +2,20 @@ import React from 'react'
 import styles from "./styles.module.scss"
 import { useState,useEffect,useRef} from 'react'
 import axios from '../../Requests/axios'
+import { useNavigate} from "react-router-dom"
+import { connect } from 'react-redux'
+import { loginSuccess } from '../../Store/Actions/AuthActions'
 
-const Login = () => {
+const Login = ({state,dispatch}) => {
  const userRef = useRef(null);
  const errRef = useRef()
  const [username,setUsername] = useState("")
  const [password,setPassword] = useState("")
  const [errMsg,setErrMsg] = useState("")
  const [success,setSuccess] = useState(false)
+
  const LOGIN_URL = "/login"
+ const navigate = useNavigate()
  useEffect(()=>{
    userRef.current.focus();
  },[])
@@ -19,7 +24,8 @@ const Login = () => {
  },[username,password])
  
 
- const handlerSubmit = async(e)=>{
+
+const handlerSubmit = async(e)=>{
    e.preventDefault()
   try{
     const response = await axios.post(LOGIN_URL,
@@ -29,9 +35,15 @@ const Login = () => {
         }
       )
      console.log(JSON.stringify(response?.data))
+     setSuccess(true)
+     loginSuccess()
   }catch(e){
     console.log(e)
   }
+ }
+ if(success === true){
+  navigate("/admin")
+
  }
  return (
     <div className={styles.wrapper}>
@@ -47,9 +59,16 @@ const Login = () => {
           <button type='submit'> войти</button>
         </form>
      </div>
-       
+     
     </div>
   )
 }
 
-export default Login
+const mapStateToProps = (state)=>({
+  auth:state.auth
+})
+
+const mapDispatchToProps = {
+  loginSuccess
+} 
+export default connect(mapStateToProps,mapDispatchToProps)(Login)

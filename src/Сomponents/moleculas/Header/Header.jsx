@@ -29,10 +29,7 @@ const Header = () => {
             text: "Фотогалерея",
             path: "/gallery",
         },
-        {
-            text: "Контакты",
-            path: "/contacts",
-        },
+     
     ];
 
     const listenScrollEvent = () => {

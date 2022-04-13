@@ -1,8 +1,11 @@
 import { combineReducers } from "redux"
-import  {rootReducer} from "./rootReducer"
+import { loginReducer } from "./loginReducer"
+import  {newsReducer} from "./newsReducer"
 
 
 
-export default combineReducers({
-    news:rootReducer
+export  const rootReducer = combineReducers({
+    news:newsReducer,
+    auth:loginReducer
 })
+
