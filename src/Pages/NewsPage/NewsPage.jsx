@@ -59,6 +59,7 @@ const NewsPage = () => {
             date: "12/12/2020"
         }];
 
+ 
 
     return (
         <div className={styles.wrapper}>
