@@ -2,6 +2,7 @@
   "name": "balalyk-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://AdiletArykbaev.github.io/tirekPortal",
   "dependencies": {
     "2gis-maps": "^3.7.1",
     "2gis-maps-react": "^0.0.4",
@@ -14,6 +15,7 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.1",
+    "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -34,9 +36,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [

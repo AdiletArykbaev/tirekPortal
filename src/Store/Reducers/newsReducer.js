@@ -3,25 +3,6 @@ const initialState = {
         title:"news1",
         body:"новость 1 для теста",
         image: "image"
-    },
-    {
-        title:"news1",
-        body:"новость 1 для теста",
-        image: "image"
-    },
-    {
-        title:"news1",
-        body:"новость 1 для теста",
-        image: "image"
-    },{
-        title:"news1",
-        body:"новость 1 для теста",
-        image: "image"
-    },
-    {
-        title:"news1",
-        body:"новость 1 для теста",
-        image: "image"
     }
 ]
 }   
