@@ -78,6 +78,10 @@
   .box {
     width: 100%;
   }
+
+  .small {
+    padding: 0 45px;
+  }
 }
 @media (max-width: 650px) {
   .small {
@@ -88,10 +92,6 @@
   .title {
     font-size: 32px;
     margin: 40px 0 10px;
-  }
-
-  .small {
-    padding: 0 60px;
   }
 }
 @media (max-width: 425px) {

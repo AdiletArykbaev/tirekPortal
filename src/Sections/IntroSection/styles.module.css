@@ -209,5 +209,30 @@ img {
     height: 32px;
   }
 }
+@media (max-height: 650px) {
+  .wrapper {
+    height: 80vh;
+  }
+}
+@media (min-height: 650px) {
+  .wrapper {
+    height: 70vh;
+  }
+}
+@media (min-height: 750px) {
+  .wrapper {
+    height: 65vh;
+  }
+}
+@media (min-height: 800px) {
+  .wrapper {
+    height: 60vh;
+  }
+}
+@media (min-height: 900px) {
+  .wrapper {
+    height: 55vh;
+  }
+}
 
 /*# sourceMappingURL=styles.module.css.map */
