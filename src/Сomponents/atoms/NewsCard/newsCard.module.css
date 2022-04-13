@@ -16,7 +16,7 @@
 }
 
 .content {
-  padding: 33px 18px 40px;
+  padding: 15px 13px 20px;
   margin: 0;
 }
 
@@ -25,11 +25,11 @@
   font-size: 20px;
   line-height: 22px;
   color: #0F001A;
-  margin: 0 0 26px;
+  margin: 0 0 10px;
 }
 
 .subtitle {
-  margin: 0 0 33px;
+  margin: 0 0 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -40,6 +40,11 @@
   display: flex;
   justify-content: flex-end;
   margin: 0;
+}
+.btnBox button {
+  margin: 0;
+  padding: 2px 5px;
+  font-size: 14px;
 }
 
 .btn {
@@ -63,10 +68,10 @@
 .date {
   font-weight: 500;
   font-size: 16px;
-  line-height: 210.9%;
+  line-height: 150%;
   letter-spacing: 0.01em;
   color: #6A6A6A;
-  margin: 0 0 22px;
+  margin: 0 0 15px;
 }
 
 @media (max-width: 1400px) {
@@ -116,6 +121,10 @@
 
   .date {
     font-size: 15px;
+  }
+
+  .content {
+    padding: 12px 10px 15px;
   }
 }
 @media (max-width: 768px) {

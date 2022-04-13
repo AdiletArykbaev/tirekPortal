@@ -88,10 +88,6 @@ const NewsPage = () => {
                                         <NewsCard image={item.image} title={item.title} subtitle={item.text}
                                                   cardDate={item.date}/>
                                     </div>
-                                    <div className={styles.box}>
-                                        <NewsCard image={item.image} title={item.title} subtitle={item.text}
-                                                  cardDate={item.date}/>
-                                    </div>
                                 </>
                             })}
                         </div>
