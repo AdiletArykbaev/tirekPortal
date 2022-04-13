@@ -34,8 +34,9 @@ const handlerSubmit = async(e)=>{
           headers:{"Content-Type":"application/json"}
         }
       )
-     console.log(JSON.stringify(response?.data))
+     console.log()
      setSuccess(true)
+     localStorage.setItem("token",JSON.stringify(response?.data))
      loginSuccess()
   }catch(e){
     console.log(e)
