@@ -3,55 +3,45 @@ import styles from "./styles.module.scss"
 import{useState, useRef, useCallback}from 'react';
 import axios from '../../Requests/axios';
 const Admin = () => {
-    const fileRef = useRef(null);
     const [text,setText] = useState("")
     const [ loading, setLoading ] = useState(false);
     const POST_URL =  "/admin/post"
     const [title,setTitle] = useState("")
-    const handleSubmit = useCallback( event => {
-      event.preventDefault();
-  
-      const fetchData = async (uint8Array) => {
-        try {
-          const response = await axios.post(
-            {
-              authenticated:true,
-              file: [...uint8Array],
-              createPostDto:{
-                createPostDto:text,
-                head:title,
-                youtubeLink:""
-              }
+    const [drag,setDrag] = useState(true)
+
+    const handlerSumbit = async (e)=>{
+        e.preventDefault()
+        const response = await axios.post(POST_URL,
+          JSON.stringify({
+            authenticated:true,
+            createPostTodo:{
+              head:title,disctiption:text, youtubeLink:""
             }
-            ,POST_URL,
-        
-            {
-              headers:{"Content-Type":"application/json"}
-            }
-          )
-  
-          setLoading(false);
-          console.log(response);
-        } catch (e) {
-          console.error(e.message, 'function handleSubmit')
-        }
-      };
-  
-      if(!fileRef.current) return void null;
-  
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        const uint8Array = new Uint8Array(reader.result);
-        setLoading(true);
-      };
-  
-      reader.readAsArrayBuffer(fileRef.current[0]);
-  
-    }, [])
+            }),
+          {
+            headers:{"Content-Type":"application/json"}
+          }
+        )
+    }
+
+    function dragStartHandler(e){
+      e.preventDefault()
+      setDrag(true)
+    }
+    function dragLeaveHandler(e){
+      e.preventDefault()
+      setDrag(false)
+    }
+    function dragDropHandler(e){
+      e.preventDefault()
+      let files = [...e.dataTransfer.files]
+      console.log(files)
+          
+    }
   return (
     <div className={styles.wrapper}>
       <form onSubmit={(e)=>{
-        handleSubmit(e)
+        handlerSumbit(e)
       }}>
           <h1 className={styles.title}>Admin Panel</h1>
            <input onChange={(e)=>{
@@ -62,10 +52,19 @@ const Admin = () => {
             }} name="body" id="" cols="30" rows="10">
             
             </textarea>
-            <input type="file"           accept="image/*"
- onChange={(e)=>{
-                fileRef.current = e.target.value
-            }} />
+            <div className={styles.drag}>
+              Перетащите сюда{
+                drag? <div> Отпустите файл</div>:
+                <div onDragStart={(e)=>dragStartHandler(e)}
+                    onDragLeave = {(e)=>dragLeaveHandler(e)}
+                    onDragOver = {(e)=>dragStartHandler(e)}
+                    onDrop={(e)=>dragDropHandler(e)}
+               >
+                   Перетащите файл 
+                </div>
+              }
+            </div>
+
             <button className={styles.addBlog}>добавить блок</button>
       </form>
     
