@@ -4,6 +4,7 @@ import {fourteen, one} from '../../Assets/images/gallery'
 import News from '../../Сomponents/organisms/News/News';
 import {LastNews} from '../../Сomponents/moleculas';
 import {NewsCard} from '../../Сomponents/atoms';
+import NavigateBtn from "../../Сomponents/atoms/NavigateBtn";
 
 const NewsPage = () => {
     const news = {
@@ -62,25 +63,38 @@ const NewsPage = () => {
 
     return (
         <div className={styles.wrapper}>
-            <h1 className={styles.title}>
-                Новости
-            </h1>
-            <div className={styles.content_wrapper}>
-                <News title={news.title} body={news.body} data={news.data} image={news.image}/>
-            </div>
-            <div className={styles.lastNews}>
-                <h2 className={styles.subtitle}>Последние новости</h2>
-                <div className={styles.subcontent}>
-                    <div className={styles.pagination}>
-                        {test.map((item) => {
-                            return <LastNews date={item.date} text={item.text}/>
-                        })}
-                    </div>
-                    <div className={styles.recomendation}>
-                        {recomendate.map((item) => {
-                            return <NewsCard image={item.image} title={item.title} subtitle={item.text}
-                                             cardDate={item.date}/>
-                        })}
+            <div className="wrapper">
+                <h1 className={styles.title}>
+                    Новости
+                </h1>
+                <div className={styles.content_wrapper}>
+                    <News title={news.title} body={news.body} data={news.data} image={news.image}/>
+                </div>
+                <div className={styles.lastNews}>
+                    <h2 className={styles.subtitle}>Последние новости</h2>
+                    <div className={styles.subcontent}>
+                        <div className={styles.pagination}>
+                            {test.map((item) => {
+                                return <LastNews date={item.date} text={item.text}/>
+                            })}
+                            <div className={styles.btnBox}>
+                                <NavigateBtn text={'Показать предыдущие новости'} address="/news"/>
+                            </div>
+                        </div>
+                        <div className={styles.recomendation}>
+                            {recomendate.map((item) => {
+                                return <>
+                                    <div className={styles.box}>
+                                        <NewsCard image={item.image} title={item.title} subtitle={item.text}
+                                                  cardDate={item.date}/>
+                                    </div>
+                                    <div className={styles.box}>
+                                        <NewsCard image={item.image} title={item.title} subtitle={item.text}
+                                                  cardDate={item.date}/>
+                                    </div>
+                                </>
+                            })}
+                        </div>
                     </div>
                 </div>
             </div>

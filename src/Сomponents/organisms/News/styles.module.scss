@@ -117,7 +117,6 @@
     flex-direction: column;
     border: none;
     box-shadow: none;
-
   }
   .firstBlock {
     width: 100%;
@@ -134,7 +133,47 @@
       position: absolute;
       background: #DADADA;
       left: 0;
-        transform: translateY(10px);
+      transform: translateY(10px);
     }
+  }
+  .data {
+    font-size: 11px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .firstBlock {
+    img {
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 214px;
+      border-radius: unset;
+      width: 100vw;
+    }
+  }
+  .secondBlock {
+    padding: 230px 0 0;
+  }
+  .data {
+    font-size: 8px;
+  }
+  .title {
+    font-size: 12px;
+  }
+  .body {
+    font-size: 10px;
   }
 }
