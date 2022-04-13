@@ -30,7 +30,7 @@ function App({store}) {
                     <Route path={"/projects"} element={<Projects/>}/>
                     <Route path='/admin' element={<Admin/>}></Route>
 
-                    <Route component={PageNotFound}/>
+                    <Route path='' component={PageNotFound}/>
                 </Routes>
             </div>
             <Footer/>

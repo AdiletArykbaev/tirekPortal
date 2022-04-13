@@ -8,6 +8,7 @@ const Navigation = ({ links }) => {
         links.map((item)=>{
            return  <Link  to={item.path}  className={({isActive})=>isActive ?styles.active:styles.link} >{item.text}</Link>
         })
+        
       }</nav>);
 };
 
