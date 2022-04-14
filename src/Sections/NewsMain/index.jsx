@@ -16,7 +16,7 @@ const NewsMain = () => {
             slidesPerView: 3,
             spaceBetween: 30,
         },
-        640: {
+        650: {
             slidesPerView: 2,
             spaceBetween: 15,
         },

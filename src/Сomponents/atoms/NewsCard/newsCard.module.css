@@ -12,23 +12,24 @@
   height: 280px;
   max-width: unset;
   margin: 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .content {
-  padding: 33px 18px 40px;
+  padding: 15px 13px 20px;
   margin: 0;
 }
 
 .title {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   color: #0F001A;
-  margin: 0 0 26px;
+  margin: 0 0 10px;
 }
 
 .subtitle {
-  margin: 0 0 33px;
+  margin: 0 0 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -39,6 +40,11 @@
   display: flex;
   justify-content: flex-end;
   margin: 0;
+}
+.btnBox button {
+  margin: 0;
+  padding: 2px 5px;
+  font-size: 14px;
 }
 
 .btn {
@@ -62,10 +68,10 @@
 .date {
   font-weight: 500;
   font-size: 16px;
-  line-height: 210.9%;
+  line-height: 150%;
   letter-spacing: 0.01em;
   color: #6A6A6A;
-  margin: 0 0 22px;
+  margin: 0 0 15px;
 }
 
 @media (max-width: 1400px) {
@@ -89,6 +95,82 @@
     height: 10px;
   }
 }
+@media (max-width: 1100px) {
+  .title {
+    font-size: 19px;
+    line-height: 150%;
+    margin: 20px 0 10px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    line-height: 150%;
+    margin: 0 0 25px;
+  }
+}
+@media (max-width: 921px) {
+  .title {
+    font-size: 18px;
+    margin: 15px 0 10px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin: 0 0 20px;
+  }
+
+  .date {
+    font-size: 15px;
+  }
+
+  .content {
+    padding: 12px 10px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 17px;
+    margin: 10px 0;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin: 0 0 15px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .title {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin: 0 0 10px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+}
+@media (max-width: 510px) {
+  .date {
+    font-size: 11px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    margin: 0 0 5px;
+  }
+}
 @media (max-width: 425px) {
   .content {
     padding: 13px 13px 30px;
@@ -104,7 +186,6 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    margin: 6px 0 14px;
   }
 
   .subtitle {

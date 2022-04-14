@@ -1,18 +1,28 @@
 .wrapper {
-  margin: 15%;
+  padding: 5%;
+  height: 100vh;
 }
-
-.content_wrapper {
-  max-width: 40%;
+.wrapper form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
-.content_wrapper input {
-  width: 40%;
+.wrapper input {
+  width: 30%;
   margin-top: 5%;
 }
-.content_wrapper button {
-  width: 40%;
+.wrapper textarea {
+  width: 50%;
+}
+.wrapper button {
+  margin-top: 5%;
+  width: 50%;
+}
+.wrapper .drag {
+  width: 100%;
+  height: 150px;
+  padding: 5%;
+  border: 2px solid dashed red;
 }
 
 /*# sourceMappingURL=styles.module.css.map */

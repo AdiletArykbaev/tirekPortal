@@ -56,7 +56,9 @@ const Header = () => {
             <div className="wrapper">
                 <div className={styles.pageWrapper}>
                     <div className={styles.logoBlock}>
-                        <img src={HeaderLogo} alt="Logo"/>
+                        <Link to="/">
+                            <img src={HeaderLogo} alt="Logo"/>
+                        </Link>
                     </div>
                     <MinMedium>
                         <div className={styles.navigation}>
