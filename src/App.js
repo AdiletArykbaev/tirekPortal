@@ -6,6 +6,7 @@ import "@fancyapps/ui/dist/fancybox.css";
 import {NewsCard} from "./Сomponents/atoms"
 import {useEffect} from "react";
 import 'remixicon/fonts/remixicon.css'
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App({store}) {
     const location = useLocation();
@@ -14,7 +15,8 @@ function App({store}) {
         window.scrollTo(0, 0);
         document.documentElement.style.scrollBehavior = "smooth";
     }, [location.pathname]);
-    console.log(store.getState())
+   const state = store.getState()
+   console.log(state)
     return (
         <div className="App">
             <input type="text"/>
@@ -28,8 +30,12 @@ function App({store}) {
                     <Route path={"/gallery"} element={<Gallery page={true}/>}/>
                     <Route path={"/news"} element={<NewsPage/>}/>
                     <Route path={"/projects"} element={<Projects/>}/>
-                    <Route path='/admin' element={<Admin/>}></Route>
-
+                    <Route path={"/admin"} element={
+                        <Admin/>
+                        // <PrivateRoute>
+                        //     <Admin/>
+                        // </PrivateRoute>
+                    }/>
                     <Route path='' component={PageNotFound}/>
                 </Routes>
             </div>

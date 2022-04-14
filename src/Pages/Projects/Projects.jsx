@@ -6,6 +6,7 @@ import styles from "./styles.module.scss"
 import ProjectImage from "../../Assets/images/projectImage.png"
 import { one,fourteen } from '../../Assets/images/gallery';
 import { NewsCard } from '../../Сomponents/atoms';
+import axios from '../../Requests/axios';
 const Projects = () => {
     const links = [
         {
@@ -57,6 +58,7 @@ const Projects = () => {
             date: "12/12/2020"
         },
        ];
+       
   return (
     <div className={styles.wrapper}>
                     <SubHeader link={links}/>
@@ -86,7 +88,7 @@ const Projects = () => {
                                           subtitle={item.text}/>))}  
                         </div>  
         </div>
-    
+
     </div>
   )
 }

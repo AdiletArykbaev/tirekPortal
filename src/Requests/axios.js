@@ -1,5 +1,13 @@
 import axios from "axios";
 
-export default axios.create({
-    baseURL: "https://tirek-backend.herokuapp.com"
+export const API_URL = "https://tirek-backend.herokuapp.com";
+
+const api = axios.create({
+    withCredentials:true,
+    baseURL: API_URL,
 })
+api.interceptors.request.use((config)=>{
+    config.headers.Authorization = `${localStorage.getItem("token")}`
+    return config;
+})
+export default api
