@@ -1,0 +1,201 @@
+.wrapper {
+  position: relative;
+}
+.wrapper .appeal {
+  width: 79%;
+}
+.wrapper .appeal .appealPageOne .appealWord {
+  margin: 0 0 80px 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 177.9%;
+  letter-spacing: 0.01em;
+}
+.wrapper .appeal .appealPageOne .appealContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 8%;
+}
+.wrapper .appeal .appealPageOne .appealContent .urmat {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  margin: 0 0 50px;
+}
+.wrapper .appeal .appealPageOne .appealContent .p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 0 40px;
+}
+.wrapper .appeal .appealPageOne .appealContent .pTwo {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.wrapper .appeal .appealPageTwo {
+  margin: 80px 0 100px;
+  width: 100%;
+}
+.wrapper .appeal .appealPageTwo .appealContentTwo {
+  width: 80%;
+  margin-left: 8%;
+}
+.wrapper .appeal .appealPageTwo .appealContentTwo .appealTextTwo {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 0 50px;
+}
+.wrapper .appeal .appealPageTwo .appealContentTwo .liTwo {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.wrapper .appeal .appealPageTwo .appealContentTwo .liTwo:not(:last-child) {
+  margin: 0 0 30px;
+}
+.wrapper .appeal .appealPageTwo .appealContentTwo .liTwo i {
+  color: #14AD02;
+  font-size: 24px;
+}
+.wrapper .appeal .appealPageThree {
+  width: 100%;
+}
+.wrapper .appeal .appealPageThree .appealContentThree {
+  width: 80%;
+  margin-left: 8%;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .TextThree {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .TextThree .th {
+  color: red;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .divUlThree {
+  margin: 50px 0 0 0;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .divUlThree ul .liThree {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .divUlThree ul .liThree:not(:last-child) {
+  margin: 0 0 30px;
+}
+.wrapper .appeal .appealPageThree .appealContentThree .divUlThree ul .liThree i {
+  color: rgba(255, 0, 0, 0.8);
+}
+.wrapper .inputs {
+  width: 79%;
+  margin: 120px 0 0 6.32%;
+}
+.wrapper .inputs .inputsBorder {
+  border: 0.5px solid #DADADA;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 6.5% 8%;
+}
+.wrapper .inputs .inputsBorder .inputsPageOne .formRow {
+  display: flex;
+  column-gap: 32px;
+  width: 100%;
+}
+.wrapper .inputs .inputsBorder .inputsPageOne .formRow input, .wrapper .inputs .inputsBorder .inputsPageOne .formRow textarea {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.9);
+  opacity: 0.8;
+}
+.wrapper .inputs .inputsBorder .inputsPageOne .formRow .inputPhones {
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border-radius: 3px;
+  width: 100%;
+}
+.wrapper .inputs .inputsBorder .inputsPageOne .formRow label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #878787;
+  opacity: 0.8;
+}
+.wrapper .inputs .inputsBorder .inputsPageOne .formRow .formDiv {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  width: calc(50% - 16px);
+}
+.wrapper .inputs .inputsBorder .BtnDownload {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.wrapper .inputs .inputsBorder .BtnDownload i {
+  color: #14AD02;
+  font-size: 22px;
+  margin: 0 30px 0 0;
+}
+.wrapper .inputs .inputsBorder .BtnDownload .wordDown {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #474747;
+  margin: 0 45px 0 0;
+}
+.wrapper .inputs .inputsBorder .BtnDownload .wordFail {
+  color: #284C9A;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+.wrapper .inputs .inputsBorder .Button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+  background: #14AD02;
+  box-shadow: 0 4px 4px rgba(21, 175, 0, 0.25);
+  border-radius: 3px;
+  width: 21%;
+  height: 45px;
+  border: none;
+}
+.wrapper .inputs .inputsBorder .btnDiv {
+  margin: 80px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapper .inputs .Email {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 80px 0 200px;
+}
+.wrapper .inputs .Email .emaile {
+  text-decoration: underline;
+  color: #284C9A;
+}
+
+/*# sourceMappingURL=styles.module.css.map */
