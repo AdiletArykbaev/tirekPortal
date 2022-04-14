@@ -1,24 +1,32 @@
 .wrapper {
+  padding: 3% 0 0;
   position: relative;
 }
-.wrapper .appeal {
+
+.appeal {
   width: 79%;
 }
-.wrapper .appeal .appealPageOne .appealWord {
+.appeal ul {
+  margin: 0;
+  padding: 0 0 0 4%;
+}
+
+.appealWord {
   margin: 0 0 80px 0;
   font-weight: 700;
   font-size: 48px;
   line-height: 177.9%;
   letter-spacing: 0.01em;
 }
-.wrapper .appeal .appealPageOne .appealContent {
+
+.appealContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
   margin-left: 8%;
 }
-.wrapper .appeal .appealPageOne .appealContent .urmat {
+
+.urmat {
   font-weight: 500;
   font-size: 32px;
   line-height: 150%;
@@ -26,35 +34,40 @@
   text-transform: capitalize;
   margin: 0 0 50px;
 }
-.wrapper .appeal .appealPageOne .appealContent .p {
+
+.p {
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
   color: rgba(0, 0, 0, 0.7);
   margin: 0 0 40px;
 }
-.wrapper .appeal .appealPageOne .appealContent .pTwo {
+
+.pTwo {
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
   color: rgba(0, 0, 0, 0.7);
 }
-.wrapper .appeal .appealPageTwo {
+
+.appealPageTwo {
   margin: 80px 0 100px;
   width: 100%;
 }
-.wrapper .appeal .appealPageTwo .appealContentTwo {
-  width: 80%;
+
+.appealContentTwo {
   margin-left: 8%;
 }
-.wrapper .appeal .appealPageTwo .appealContentTwo .appealTextTwo {
+
+.appealTextTwo {
   font-weight: 600;
   font-size: 24px;
-  line-height: 34px;
+  line-height: 150%;
   color: rgba(0, 0, 0, 0.8);
   margin: 0 0 50px;
 }
-.wrapper .appeal .appealPageTwo .appealContentTwo .liTwo {
+
+.liTwo {
   font-weight: 400;
   font-size: 22px;
   line-height: 150%;
@@ -63,32 +76,37 @@
   align-items: center;
   column-gap: 30px;
 }
-.wrapper .appeal .appealPageTwo .appealContentTwo .liTwo:not(:last-child) {
+.liTwo:not(:last-child) {
   margin: 0 0 30px;
 }
-.wrapper .appeal .appealPageTwo .appealContentTwo .liTwo i {
+.liTwo i {
   color: #14AD02;
   font-size: 24px;
 }
-.wrapper .appeal .appealPageThree {
+
+.appealPageThree {
   width: 100%;
 }
-.wrapper .appeal .appealPageThree .appealContentThree {
-  width: 80%;
+
+.appealContentThree {
   margin-left: 8%;
 }
-.wrapper .appeal .appealPageThree .appealContentThree .TextThree {
+
+.TextThree {
   font-weight: 600;
   font-size: 24px;
-  line-height: 34px;
+  line-height: 150%;
 }
-.wrapper .appeal .appealPageThree .appealContentThree .TextThree .th {
+
+.th {
   color: red;
 }
-.wrapper .appeal .appealPageThree .appealContentThree .divUlThree {
+
+.divUlThree {
   margin: 50px 0 0 0;
 }
-.wrapper .appeal .appealPageThree .appealContentThree .divUlThree ul .liThree {
+
+.liThree {
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
@@ -97,42 +115,38 @@
   column-gap: 30px;
   align-items: center;
 }
-.wrapper .appeal .appealPageThree .appealContentThree .divUlThree ul .liThree:not(:last-child) {
+.liThree:not(:last-child) {
   margin: 0 0 30px;
 }
-.wrapper .appeal .appealPageThree .appealContentThree .divUlThree ul .liThree i {
+.liThree i {
   color: rgba(255, 0, 0, 0.8);
 }
-.wrapper .inputs {
-  width: 79%;
-  margin: 120px 0 0 6.32%;
+
+.inputs {
+  margin: 120px 0 0 0;
 }
-.wrapper .inputs .inputsBorder {
+
+.inputsBorder {
   border: 0.5px solid #DADADA;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   padding: 6.5% 8%;
 }
-.wrapper .inputs .inputsBorder .inputsPageOne .formRow {
+
+.formRow {
   display: flex;
   column-gap: 32px;
   width: 100%;
 }
-.wrapper .inputs .inputsBorder .inputsPageOne .formRow input, .wrapper .inputs .inputsBorder .inputsPageOne .formRow textarea {
+.formRow input, .formRow textarea {
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 150%;
   color: rgba(0, 0, 0, 0.9);
   opacity: 0.8;
 }
-.wrapper .inputs .inputsBorder .inputsPageOne .formRow .inputPhones {
-  font-family: "Montserrat", sans-serif;
-  background-color: transparent;
-  border-radius: 3px;
-  width: 100%;
-}
-.wrapper .inputs .inputsBorder .inputsPageOne .formRow label {
+.formRow label {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -140,36 +154,32 @@
   color: #878787;
   opacity: 0.8;
 }
-.wrapper .inputs .inputsBorder .inputsPageOne .formRow .formDiv {
+
+.inputPhones {
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.formDiv {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
   width: calc(50% - 16px);
 }
-.wrapper .inputs .inputsBorder .BtnDownload {
+
+.BtnDownload {
   display: flex;
   align-items: center;
-  margin-top: 15px;
 }
-.wrapper .inputs .inputsBorder .BtnDownload i {
+.BtnDownload i {
   color: #14AD02;
   font-size: 22px;
   margin: 0 30px 0 0;
 }
-.wrapper .inputs .inputsBorder .BtnDownload .wordDown {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #474747;
-  margin: 0 45px 0 0;
-}
-.wrapper .inputs .inputsBorder .BtnDownload .wordFail {
-  color: #284C9A;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-}
-.wrapper .inputs .inputsBorder .Button {
+
+.Button {
   font-weight: 600;
   font-size: 20px;
   line-height: 29px;
@@ -181,21 +191,636 @@
   height: 45px;
   border: none;
 }
-.wrapper .inputs .inputsBorder .btnDiv {
+
+.btnDiv {
   margin: 80px 0 0;
   display: flex;
   justify-content: flex-end;
 }
-.wrapper .inputs .Email {
+
+.wordDown {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #474747;
+  margin: 0 45px 0 0;
+}
+
+.wordFail {
+  color: #284C9A;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.Email {
   font-weight: 400;
   font-size: 22px;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.7);
   margin: 80px 0 200px;
 }
-.wrapper .inputs .Email .emaile {
+
+.emaile {
   text-decoration: underline;
   color: #284C9A;
+}
+
+@media (max-width: 1600px) {
+  .appealWord {
+    font-size: 42px;
+    margin: 0 0 60px;
+  }
+
+  .urmat {
+    font-size: 30px;
+    margin: 0 0 40px;
+  }
+
+  .p {
+    font-size: 22px;
+    margin: 0 0 30px;
+    line-height: 150%;
+  }
+
+  .pTwo {
+    font-size: 22px;
+    line-height: 150%;
+  }
+
+  .appealPageTwo {
+    margin: 60px 0 80px;
+  }
+
+  .appealTextTwo {
+    font-size: 22px;
+    margin: 0 0 40px;
+  }
+
+  .liTwo {
+    font-size: 20px;
+    column-gap: 20px;
+  }
+  .liTwo:not(:last-child) {
+    margin: 0 0 20px;
+  }
+
+  .TextThree {
+    font-size: 22px;
+  }
+
+  .divUlThree {
+    margin: 40px 0 0;
+  }
+
+  .liThree {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .liThree:not(:last-child) {
+    margin: 0 0 20px;
+  }
+
+  .inputs {
+    margin: 90px 0 0;
+  }
+
+  .formRow label, .formRow input, .formRow textarea {
+    font-size: 16px;
+  }
+
+  .inputPhones {
+    min-height: unset;
+  }
+
+  .formDiv {
+    row-gap: 25px;
+  }
+
+  .BtnDownload i {
+    font-size: 20px;
+    margin: 0 20px 0 0;
+  }
+
+  .wordDown, .wordFail {
+    font-size: 18px;
+  }
+
+  .Email {
+    margin: 60px 0 170px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1400px) {
+  .appealWord {
+    font-size: 36px;
+    line-height: 150%;
+    margin: 0 0 50px;
+  }
+
+  .urmat {
+    font-size: 26px;
+    margin: 0 0 30px;
+  }
+
+  .p {
+    font-size: 21px;
+    margin: 0 0 25px;
+  }
+
+  .pTwo {
+    font-size: 21px;
+  }
+
+  .appealPageTwo {
+    margin: 50px 0 70px;
+  }
+
+  .appealTextTwo {
+    font-size: 21px;
+    margin: 0 0 30px;
+  }
+
+  .liTwo {
+    column-gap: 15px;
+    font-size: 19px;
+  }
+  .liTwo:not(:last-child) {
+    margin: 0 0 15px;
+  }
+
+  .TextThree {
+    font-size: 21px;
+  }
+
+  .divUlThree {
+    margin: 30px 0 0;
+  }
+
+  .liThree {
+    font-size: 19px;
+    column-gap: 15px;
+  }
+  .liThree:not(:last-child) {
+    margin: 0 0 15px;
+  }
+
+  .inputs {
+    margin: 70px 0 0;
+  }
+
+  .formRow input, .formRow textarea, .formRow label {
+    font-size: 15px;
+  }
+
+  .wordDown, .wordFail {
+    font-size: 17px;
+  }
+
+  .wordDown {
+    margin: 0 30px 0 0;
+  }
+
+  .BtnDownload i {
+    font-size: 18px;
+    margin: 0 15px 0 0;
+  }
+
+  .btnDiv {
+    margin: 60px 0 0;
+  }
+
+  .Button {
+    font-size: 18px;
+    line-height: 150%;
+    height: 40px;
+  }
+
+  .Email {
+    margin: 50px 0 150px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1100px) {
+  .appealWord {
+    font-size: 32px;
+    margin: 0 0 40px;
+  }
+
+  .urmat {
+    font-size: 22px;
+    margin: 0 0 20px;
+  }
+
+  .p {
+    font-size: 19px;
+    margin: 0 0 15px;
+  }
+
+  .pTwo {
+    font-size: 19px;
+  }
+
+  .appealPageTwo {
+    margin: 40px 0 60px;
+  }
+
+  .appealTextTwo {
+    font-size: 19px;
+    margin: 0 0 20px;
+  }
+
+  .liTwo {
+    font-size: 18px;
+    column-gap: 12px;
+  }
+  .liTwo:not(:last-child) {
+    margin: 0 0 10px;
+  }
+
+  .TextThree {
+    font-size: 19px;
+  }
+
+  .divUlThree {
+    margin: 20px 0 0;
+  }
+
+  .liThree {
+    font-size: 18px;
+    column-gap: 12px;
+  }
+  .liThree:not(:last-child) {
+    margin: 0 0 10px;
+  }
+
+  .inputs {
+    margin: 60px 0 0;
+  }
+
+  .formRow input, .formRow label, .formRow textarea {
+    font-size: 14px;
+  }
+
+  .formDiv {
+    row-gap: 20px;
+  }
+
+  .BtnDownload i {
+    font-size: 17px;
+    margin: 0 10px 0 0;
+  }
+
+  .wordDown, .wordFail {
+    font-size: 16px;
+  }
+
+  .wordDown {
+    margin: 0 20px 0 0;
+  }
+
+  .btnDiv {
+    margin: 40px 0 0;
+  }
+
+  .Button {
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .Email {
+    margin: 40px 0 120px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 920px) {
+  .appealWord {
+    font-size: 28px;
+    margin: 0 0 30px;
+  }
+
+  .appeal {
+    width: 100%;
+  }
+
+  .urmat {
+    font-size: 20px;
+    margin: 0 0 15px;
+  }
+
+  .p {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+
+  .pTwo {
+    font-size: 18px;
+  }
+
+  .appealPageTwo {
+    margin: 30px 0 45px;
+  }
+
+  .appealTextTwo {
+    font-size: 18px;
+    margin: 0 0 15px;
+  }
+
+  .liTwo {
+    font-size: 16px;
+    column-gap: 8px;
+  }
+  .liTwo i {
+    font-size: 20px;
+  }
+  .liTwo:not(:last-child) {
+    margin: 0 0 8px;
+  }
+
+  .TextThree {
+    font-size: 18px;
+  }
+
+  .divUlThree {
+    margin: 15px 0 0;
+  }
+
+  .liThree {
+    font-size: 16px;
+    column-gap: 8px;
+  }
+  .liThree:not(:last-child) {
+    margin: 0 0 8px;
+  }
+
+  .inputs {
+    margin: 50px 0 0;
+  }
+
+  .formRow {
+    column-gap: 25px;
+  }
+  .formRow input, .formRow label, .formRow textarea {
+    font-size: 13px;
+  }
+
+  .formDiv {
+    width: calc(50% - 12.5px);
+    row-gap: 15px;
+  }
+
+  .BtnDownload i {
+    font-size: 16px;
+    margin: 0 5px 0 0;
+  }
+
+  .wordDown {
+    margin: 0 15px 0 0;
+    font-size: 15px;
+  }
+
+  .wordFail {
+    font-size: 15px;
+  }
+
+  .btnDiv {
+    margin: 30px 0 0;
+  }
+
+  .Button {
+    font-size: 15px;
+  }
+
+  .Email {
+    margin: 30px 0 80px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 6% 0 0;
+  }
+
+  .appealWord {
+    font-size: 24px;
+    margin: 0 0 25px;
+  }
+
+  .urmat {
+    font-size: 17px;
+    margin: 0 0 10px;
+  }
+
+  .p {
+    font-size: 16px;
+  }
+
+  .pTwo {
+    font-size: 16px;
+  }
+
+  .appealPageTwo {
+    margin: 25px 0 35px;
+  }
+
+  .appealTextTwo {
+    font-size: 17px;
+    margin: 0 0 10px;
+  }
+
+  .liTwo {
+    font-size: 15px;
+    column-gap: 5px;
+  }
+  .liTwo:not(:last-child) {
+    margin: 0 0 5px;
+  }
+
+  .liThree {
+    font-size: 15px;
+    column-gap: 5px;
+  }
+  .liThree:not(:last-child) {
+    margin: 0 0 5px;
+  }
+
+  .TextThree {
+    font-size: 17px;
+  }
+
+  .divUlThree {
+    margin: 10px 0 0;
+  }
+
+  .inputs {
+    margin: 40px 0 0;
+  }
+
+  .inputsBorder {
+    padding: 8%;
+  }
+
+  .formRow {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .formDiv {
+    width: 100%;
+  }
+
+  .Button {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .Email {
+    margin: 40px 0 80px;
+  }
+}
+@media (max-width: 576px) {
+  .appealWord {
+    font-size: 20px;
+  }
+
+  .urmat {
+    font-size: 16px;
+  }
+
+  .p, .pTwo {
+    font-size: 14px;
+  }
+
+  .appealTextTwo {
+    font-size: 16px;
+  }
+
+  .liTwo {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .appealContentThree, .appealContentTwo, .appealContent {
+    margin-left: 6%;
+  }
+
+  .TextThree {
+    font-size: 16px;
+  }
+
+  .liThree {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .formRow input, .formRow label, .formRow textarea {
+    font-size: 11px;
+    line-height: 160%;
+  }
+
+  .wordDown, .wordFail {
+    font-size: 13px;
+  }
+
+  .Button {
+    width: 100%;
+    margin: unset;
+  }
+
+  .Email {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 11% 0 0;
+  }
+
+  .appealWord {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 0 40px;
+  }
+
+  .urmat {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 18px;
+    color: #0F001A;
+    margin: 0 0 22px;
+  }
+
+  .p, .pTwo {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    color: #0F001A;
+  }
+
+  .p {
+    margin: 0 0 15px;
+  }
+
+  .appealPageTwo {
+    margin: 30px 0 55px;
+  }
+
+  .appealTextTwo, .TextThree {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+    color: #0F001A;
+    margin: 0 0 20px;
+  }
+
+  .liTwo, .liThree {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    color: #0F001A;
+    column-gap: 15px;
+  }
+
+  .inputs {
+    margin: 100px 0 0;
+  }
+
+  .inputsBorder {
+    padding: 13.5% 4.5%;
+  }
+
+  .formDiv, .formRow {
+    row-gap: 10px;
+  }
+
+  .BtnDownload {
+    margin: 15px 0 0;
+  }
+
+  .wordDown, .wordFail {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 32px;
+    color: #474747;
+  }
+
+  .Button {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+    height: 32px;
+  }
+
+  .Email {
+    margin: 40px 0 60px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    color: #0F001A;
+  }
 }
 
 /*# sourceMappingURL=styles.module.css.map */

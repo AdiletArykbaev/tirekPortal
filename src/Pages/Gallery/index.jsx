@@ -76,7 +76,7 @@ const Gallery = ({page}) => {
                                 </div>
                                 <img
                                     data-src={last}
-                                    data-fancybox="gallery" className="gallery__small" src={last} alt=""/>
+                                    data-fancybox="gallery" className="gallery__small gallery__last" src={last} alt=""/>
                             </div>
                         </div>
                     </div>

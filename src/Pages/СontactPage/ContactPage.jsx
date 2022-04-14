@@ -89,7 +89,7 @@ const ContactPage = () => {
                                     </div>
                                     <div className={styles.formDiv}>
                                         <TextField multiline
-                                                   rows={5.4} id="outlined-basic" label="Напишите сообщение*"
+                                                   rows={5} id="outlined-basic" label="Напишите сообщение*"
                                                    variant="outlined"
                                                    className={styles.inputsComment}/>
                                         <div className={styles.BtnDownload}>
