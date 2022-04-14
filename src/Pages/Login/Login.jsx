@@ -1,20 +1,20 @@
 import React from 'react'
 import styles from "./styles.module.scss"
 import { useState,useEffect,useRef} from 'react'
-import axios from '../../Requests/axios'
-import { useNavigate} from "react-router-dom"
 import { connect } from 'react-redux'
-import { loginSuccess } from '../../Store/Actions/AuthActions'
+import { loginFetch } from '../../Store/Thunks/loginThunk'
+import { useDispatch } from 'react-redux'
+import { useNavigate,Navigate } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
-const Login = ({state,dispatch}) => {
+const Login = () => {
  const userRef = useRef(null);
  const errRef = useRef()
+ const dispatch = useDispatch()
  const [username,setUsername] = useState("")
  const [password,setPassword] = useState("")
  const [errMsg,setErrMsg] = useState("")
- const [success,setSuccess] = useState(false)
-
- const LOGIN_URL = "/login"
+ const state = useSelector(state =>state.auth)
  const navigate = useNavigate()
  useEffect(()=>{
    userRef.current.focus();
@@ -25,32 +25,20 @@ const Login = ({state,dispatch}) => {
  
 
 
-const handlerSubmit = async(e)=>{
-   e.preventDefault()
-  try{
-    const response = await axios.post(LOGIN_URL,
-        JSON.stringify({username,password}),
-        {
-          headers:{"Content-Type":"application/json"}
-        }
-      )
-     console.log()
-     setSuccess(true)
-     localStorage.setItem("token",JSON.stringify(response?.data))
-     loginSuccess()
-  }catch(e){
-    console.log(e)
-  }
- }
- if(success === true){
-  navigate("/admin")
-
- }
  return (
     <div className={styles.wrapper}>
       <p ref={errRef} className={errMsg?"errmsg":"offscreen"}>{errMsg}</p>
       <div className={styles.content_wrapper}>
-        <form onSubmit={handlerSubmit}>
+        <form onSubmit={(e)=>{
+          e.preventDefault()
+          dispatch(loginFetch(username,password))
+          console.log("ourState",state)
+          if(state.isAuth == true){
+            navigate("/admin")
+          }else{
+            alert("введите правильный пароль")
+          }
+        }}>
           <input ref={userRef} onChange={(e)=>{
             setUsername(e.target.value)
           }} placeholder='имя пользывателя' type="login" />
@@ -65,11 +53,4 @@ const handlerSubmit = async(e)=>{
   )
 }
 
-const mapStateToProps = (state)=>({
-  auth:state.auth
-})
-
-const mapDispatchToProps = {
-  loginSuccess
-} 
-export default connect(mapStateToProps,mapDispatchToProps)(Login)
+export default Login

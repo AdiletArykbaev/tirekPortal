@@ -1,32 +1,18 @@
 import React from 'react';
 import styles from "./styles.module.scss"
-import{useState, useRef, useCallback}from 'react';
-import axios from '../../Requests/axios';
+import{useState}from 'react';
+import { useDispatch } from 'react-redux';
+import { addNews } from '../../Store/Thunks/newsThunk';
 const Admin = () => {
     const [text,setText] = useState("")
-    const [ loading, setLoading ] = useState(false);
     const [file,setFile] = useState([])
-    const POST_URL =  "/admin/post"
-    const token = localStorage.getItem("token")
     const [title,setTitle] = useState("")
-    const handlerSubmit = ()=>{
-      axios.post(POST_URL,{
-        authenticated:true,
-        token:token,
-        file:file,
-        createPostToDo:{
-          discription:text, 
-          head: title,
-          youTubeLink:""
-       }
-      }
-        )
-    }
+    const dispatch = useDispatch()
   return (
     <div className={styles.wrapper}>
       <form onSubmit={(e)=>{
         e.preventDefault()
-        handlerSubmit()
+        dispatch(addNews(file,title,text))
       }}>
           <h1 className={styles.title}>Admin Panel</h1>
            <input onChange={(e)=>{

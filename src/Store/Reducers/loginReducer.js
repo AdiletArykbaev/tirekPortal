@@ -1,6 +1,6 @@
 import { LOGIN_SUCCES, LOGIN} from "../types"
 const initialState = {
-    auth:false,
+    isAuth:false,
     token:"token"
 }
 
@@ -8,13 +8,13 @@ const initialState = {
 
 export  const loginReducer = (state=initialState,action)=>{
         switch(action.type){
-            case LOGIN:
-                return {
-                    ...state,
-                   
-                }
             case LOGIN_SUCCES:
-                return state.auth = true;
+                const token = action.token;
+                state.token = token 
+                state.isAuth = true
+                return state
+               
+            
             default:
               return state
         }

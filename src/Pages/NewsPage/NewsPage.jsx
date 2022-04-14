@@ -4,8 +4,13 @@ import {fourteen, one} from '../../Assets/images/gallery'
 import News from '../../Сomponents/organisms/News/News';
 import {LastNews} from '../../Сomponents/moleculas';
 import {NewsCard} from '../../Сomponents/atoms';
-
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllNews } from '../../Store/Thunks/newsThunk';
 const NewsPage = () => {
+    const dispatch = useDispatch()
+    const state = useSelector(state=>state.news)
+
     const news = {
         title: "20 НУЖДАЮЩИМСЯ СЕМЬЯМ, КОТОРЫЕ СОСТОЯ НА УЧЕТЕ НАШЕГО ФОНДА, БЫЛА ОКАЗАНА ПОМОЩЬ В ВИДЕ ПРОДУКТОВЫХ",
         body: "Со стороны наших спонсоров 20 нуждающимся семьям, которые состоя на учете нашего фонда, была оказана помощь в виде продуктовых пакетов. Выражаем особую благодарность нашим спонсорам за доброту, отзывчивость и неравнодушие!",
@@ -59,7 +64,10 @@ const NewsPage = () => {
             date: "12/12/2020"
         }];
 
- 
+    useEffect(()=>{
+        dispatch(getAllNews)
+        console.log(state)
+    },[])
 
     return (
         <div className={styles.wrapper}>
