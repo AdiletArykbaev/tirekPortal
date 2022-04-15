@@ -9,7 +9,7 @@ import NavigateBtn from "../../Сomponents/atoms/NavigateBtn";
 const NewsMain = () => {
     const swiperBreakpoints = {
         1600: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 100,
         },
         921: {

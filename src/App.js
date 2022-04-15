@@ -1,7 +1,7 @@
 import './App.css';
 import {Header, Footer} from './Сomponents/moleculas';
 import {Routes, Route, useLocation,} from "react-router-dom"
-import {MainPage, Login, ContactPage, Gallery, PageNotFound, NewsPage, Projects,Admin} from './Pages';
+import {MainPage, Login, ContactPage, Gallery, PageNotFound, NewsPage, Projects, Admin} from './Pages';
 import "@fancyapps/ui/dist/fancybox.css";
 import {NewsCard} from "./Сomponents/atoms"
 import {useEffect} from "react";
@@ -15,8 +15,7 @@ function App({store}) {
         window.scrollTo(0, 0);
         document.documentElement.style.scrollBehavior = "smooth";
     }, [location.pathname]);
-   const state = store.getState()
-   console.log(state)
+    const state = store.getState();
     return (
         <div className="App">
             <input type="text"/>

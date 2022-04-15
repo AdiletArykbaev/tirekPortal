@@ -6,8 +6,8 @@ import {MaxMedium, MinMedium} from "../../../utils/mediaQuiries";
 import {Link} from "react-router-dom";
 
 const Header = () => {
-    const [color, setColor] = useState("")
-    const [background, setBackground] = useState("")
+    const [color, setColor] = useState("");
+    const [background, setBackground] = useState("");
     const links = [
         {
             text: "Главная",
@@ -29,7 +29,7 @@ const Header = () => {
             text: "Фотогалерея",
             path: "/gallery",
         },
-     
+
     ];
 
     const listenScrollEvent = () => {
@@ -48,7 +48,6 @@ const Header = () => {
             window.removeEventListener("scroll", listenScrollEvent);
         };
     }, [])
-    console.log(color)
 
     const [menu, setMenu] = useState(false);
     return (

@@ -45,6 +45,8 @@
   margin: 0;
   padding: 2px 5px;
   font-size: 14px;
+  text-transform: capitalize;
+  line-height: 100%;
 }
 
 .btn {
@@ -169,6 +171,10 @@
   .subtitle {
     font-size: 13px;
     margin: 0 0 5px;
+  }
+
+  .btnBox button {
+    font-size: 10px;
   }
 }
 @media (max-width: 425px) {

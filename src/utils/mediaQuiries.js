@@ -13,6 +13,13 @@ export const MaxMedium = (props) => (
     <Responsive {...props} maxWidth={920}/>
 );
 
+export const Max768 = (props) => (
+    <Responsive {...props} maxWidth={768}/>
+);
+export const Min768 = (props) => (
+    <Responsive {...props} minWidth={768}/>
+);
+
 export const MinSmall = (props) => (
     <Responsive {...props} minWidth={601}/>
 );

@@ -11,11 +11,9 @@ import {
 import store from './Store/store';
 
 
-const container = document.getElementById("app")
+const container = document.getElementById("app");
 const root = ReactDOM.createRoot(container);
 
-
-console.log(store)
 root.render(
     <BrowserRouter>
         <Provider store={store}>

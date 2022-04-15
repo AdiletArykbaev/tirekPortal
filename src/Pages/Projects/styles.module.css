@@ -1,6 +1,5 @@
 .content {
   display: flex;
-  margin-top: 5%;
 }
 
 .content_wrapper {
@@ -22,27 +21,99 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 180%;
-  /* or 32px */
   text-align: justify;
   letter-spacing: 0.01em;
   color: #000000;
 }
 
 .title {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 150%;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 177.9%;
+  letter-spacing: 0.01em;
   color: #000000;
+  margin: 0 0 50px;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 0;
 }
 
 .recomendate {
-  margin-top: 5%;
+  margin-top: 60px;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
 }
-.recomendate div {
-  margin-left: 5%;
+.recomendate img {
+  height: auto;
+}
+
+.box {
+  width: 23%;
+}
+
+@media (max-width: 1600px) {
+  .title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 1400px) {
+  .title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 32px;
+    margin: 0 0 40px;
+  }
+
+  .box {
+    width: 30%;
+  }
+  .box:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .box {
+    width: 30%;
+  }
+  .box:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .box {
+    width: 32%;
+  }
+}
+@media (max-width: 800px) {
+  .box {
+    width: 47%;
+  }
+  .box:nth-child(4) {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .box {
+    width: 48%;
+  }
+}
+@media (max-width: 450px) {
+  .box {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=styles.module.css.map */
