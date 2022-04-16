@@ -1,22 +1,32 @@
 import api from "./axios"
+import axios  from 'axios';
 const LOGIN_URL = "/login"
 const CREATE_POST_URL = "/admin/post"
 const GET_NEWS_URL = "/admin/post/getAll"
 
 
 export const login = async (username,password)=>{
-  const response = await api.post(LOGIN_URL,{
+  let res;
+  const fetchData = await api.post(LOGIN_URL,{
     username,
     password
   })
-  return response.data
+  res = await fetchData?.data
+  console.log(res)
+  return res
 }
 
 export const newsPost = async (file,postBody)=>{
   const response = await api.post(CREATE_POST_URL,{
+    authenticated:true,
+    
     file,
-    postBody
+    createPostDto: postBody,
+
+
+  
   })
+  console.log("backend response", response)
   return response
 }
 export const getNews = async ()=>{

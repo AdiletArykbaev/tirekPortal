@@ -6,6 +6,8 @@ import { loginFetch } from '../../Store/Thunks/loginThunk'
 import { useDispatch } from 'react-redux'
 import { useNavigate,Navigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { login } from '../../Requests/request'
+import { LOGIN_SUCCES } from '../../Store/types'
 
 const Login = () => {
  const userRef = useRef(null);
@@ -23,6 +25,14 @@ const Login = () => {
    setErrMsg("")
  },[username,password])
  
+ const handlerSubmit=(e)=>{
+   const fetchData =  login(username,password).then(response=>{
+    localStorage.setItem("token",JSON.stringify(response.value))
+   })
+   navigate("/admin")
+
+ 
+}
 
 
  return (
@@ -31,13 +41,8 @@ const Login = () => {
       <div className={styles.content_wrapper}>
         <form onSubmit={(e)=>{
           e.preventDefault()
-          dispatch(loginFetch(username,password))
-          console.log("ourState",state)
-          if(state.isAuth == true){
-            navigate("/admin")
-          }else{
-            alert("введите правильный пароль")
-          }
+          handlerSubmit()          
+        
         }}>
           <input ref={userRef} onChange={(e)=>{
             setUsername(e.target.value)

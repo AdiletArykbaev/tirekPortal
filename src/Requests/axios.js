@@ -3,7 +3,7 @@ import axios from "axios";
 export const API_URL = "https://tirek-backend.herokuapp.com";
 
 const api = axios.create({
-    withCredentials:true,
+    withCredentials:false,
     baseURL: API_URL,
 })
 api.interceptors.request.use((config)=>{
