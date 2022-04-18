@@ -24,18 +24,16 @@
   border-radius: 6px;
   text-align: center;
   margin-top: 1%;
+  font-weight: 500;
   color: #14AD02;
-
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
 
   &:hover {
     background-color: #14AD02;
     color: #fff;
   }
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
 }
 
 .burger {
@@ -146,6 +144,12 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .button {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 1300px) {
   .logoBlock {
     width: 130px;
@@ -168,10 +172,10 @@
 }
 
 @media (max-width: 425px) {
-  .popupOpen ul li a{
+  .popupOpen ul li a {
     font-size: 16px;
   }
-  .popup ul li a{
+  .popup ul li a {
     font-size: 16px;
   }
 }

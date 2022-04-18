@@ -7,6 +7,7 @@ import {NewsCard} from "./Сomponents/atoms"
 import {useEffect} from "react";
 import 'remixicon/fonts/remixicon.css'
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import ProjectItem from "./Pages/ProjectItem";
 
 function App({store}) {
     const location = useLocation();
@@ -36,6 +37,7 @@ function App({store}) {
                         // </PrivateRoute>
                     }/>
                     <Route path='' component={PageNotFound}/>
+                    <Route path="/health" element={<ProjectItem/>}/>
                 </Routes>
             </div>
             <Footer/>

@@ -3,15 +3,16 @@
   padding: 2%;
   display: flex;
   justify-content: center;
+  column-gap: 48px;
 }
 
 .link {
-  padding: 2% 4%;
+  padding: 2% 0;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 130%;
   text-decoration: none;
   color: #0F001A;
 
@@ -22,14 +23,25 @@
 }
 
 .active {
-  padding: 2% 4%;
+  padding: 2% 0;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 130%;
   text-decoration: none;
   color: #14AD02;
+}
+
+@media (max-width: 1600px) {
+
+  .wrapper {
+    column-gap: 48px;
+  }
+  .link, .active {
+    font-size: 18px;
+  }
+
 }
 
 @media (max-width: 1300px) {

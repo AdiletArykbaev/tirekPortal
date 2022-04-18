@@ -6,7 +6,7 @@ import CategoriesList from "../../Сomponents/atoms/CategoriesList";
 
 const OurProjects = () => {
     const swiperBreakpoints = {
-        1600: {
+        1400: {
             slidesPerView: 3,
             spaceBetween: 30,
         },

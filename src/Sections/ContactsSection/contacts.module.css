@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 150px 0;
+  padding: 8% 0;
 }
 
 .title {
@@ -7,12 +7,14 @@
   font-size: 48px;
   line-height: 177.9%;
   letter-spacing: 0.01em;
+  margin: 0 0 5%;
+  text-align: center;
 }
 
 .text, .info {
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 150%;
   text-align: justify;
   color: #0F001A;
   margin: 0;
@@ -43,21 +45,22 @@
 }
 
 .btn {
-  background: #14AD02;
+  padding: 2% 0;
+  background: #15AF00;
   border-radius: 3px;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 27px;
+  line-height: 130%;
   text-align: center;
   color: #FFFFFF;
-  padding: 10px 0;
   width: 40%;
+  font-family: "Montserrat", sans-serif;
   border: 1px solid transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  outline: none;
 }
 .btn:hover {
-  border: 1px solid #14AD02;
-  color: #14AD02;
-  background: #FFF;
+  background: #0D6C00;
 }
 
 .icons {
@@ -65,14 +68,30 @@
   display: flex;
   column-gap: 20px;
 }
+.icons a {
+  font-size: 25px;
+  color: #14AD02;
+}
+.icons a:hover {
+  color: #0D6C00;
+}
 
 .content {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1215686275);
-  padding: 60px 100px 140px;
+  padding: 60px 80px 100px;
   border-radius: 10px;
   border: 1px solid #DADADA;
 }
 
+@media (max-width: 1600px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+}
 @media (max-width: 1400px) {
   .content {
     padding: 0 70px 100px;

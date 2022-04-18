@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import SwiperCards from "../../Сomponents/atoms/SwiperCards";
 import NavigateBtn from "../../Сomponents/atoms/NavigateBtn";
+import {Max768, Min768} from "../../utils/mediaQuiries";
 
 const NewsMain = () => {
     const swiperBreakpoints = {
@@ -29,8 +30,15 @@ const NewsMain = () => {
             <div className="wrapper mainSwiper">
                 <h2 className={styles.title}>Последние новости</h2>
                 <p className={styles.subtitle}>Читайте последние новости нашего фонда</p>
-                <NavigateBtn address={'/news'} text={'Все новости'}/>
+                <Max768>
+                    <NavigateBtn address={'/news'} text={'Все новости'}/>
+                </Max768>
                 <SwiperCards padding={styles.container} margin={50} breakpoints={swiperBreakpoints}/>
+                <Min768>
+                    <div className={styles.btnBox}>
+                        <NavigateBtn address={'/news'} text={'Все новости'}/>
+                    </div>
+                </Min768>
             </div>
         </div>
     );

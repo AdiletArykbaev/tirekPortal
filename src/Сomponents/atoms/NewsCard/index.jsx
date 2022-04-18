@@ -6,7 +6,9 @@ const NewsCard = ({title, subtitle, image, cardDate, width}) => {
     return (
 
         <div style={{width: width}} className={styles.box}>
-            <img className={styles.img} src={image} alt=""/>
+            <div className={styles.boxImg}>
+                <img className={styles.img} src={image} alt=""/>
+            </div>
             <div className={styles.content}>
                 {cardDate !== undefined ? <p className={styles.date}>{cardDate}</p> : ''}
                 <h3 className={styles.title}>{title}</h3>

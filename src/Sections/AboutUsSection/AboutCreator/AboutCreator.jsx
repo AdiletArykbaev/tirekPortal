@@ -24,6 +24,6 @@ const AboutCreator = () => {
             </h1>
         </div>
     )
-}
+};
 
 export default AboutCreator

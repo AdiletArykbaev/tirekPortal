@@ -21,13 +21,11 @@
 }
 
 .footer__menu {
-    display: flex;
-    align-items: center;
-    column-gap: 100px;
+    margin: 0;
+    padding: 0;
 }
 
 .footer__menu ul {
-    margin: 0;
 }
 
 .footer__menu li:not(:last-child) {
@@ -116,7 +114,7 @@
 .footer__contact p {
     font-weight: 400;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 100%;
 }
 
 .footer__right {
@@ -130,9 +128,14 @@
     column-gap: 18px;
 }
 
-.footer__icons img {
-    width: 20px;
-    height: 20px;
+.footer__icons a {
+    font-size: 20px;
+    line-height: 100%;
+    color: #14AD02;
+}
+
+.footer__icons a:hover {
+    color: #0D6C00;
 }
 
 @media (max-width: 1400px) {
