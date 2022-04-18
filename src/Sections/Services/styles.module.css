@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 5%;
+  padding: 8% 5%;
 }
 
 .content_wrapper {
@@ -13,11 +13,12 @@
 .title {
   font-family: "Segoe UI", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 177.9%;
   letter-spacing: 0.01em;
   color: #000000;
+  margin: 0;
+  font-weight: 600;
 }
 
 .backgroundImage {
@@ -34,6 +35,11 @@
   row-gap: 40px;
 }
 
+@media (max-width: 1600px) {
+  .title {
+    font-size: 32px;
+  }
+}
 @media (max-width: 1400px) {
   .content_wrapper {
     width: 100%;

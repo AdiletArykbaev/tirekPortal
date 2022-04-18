@@ -18,12 +18,9 @@ const AboutUs = () => {
                         <AboutCreator/>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     )
-}
+};
 
 export default AboutUs

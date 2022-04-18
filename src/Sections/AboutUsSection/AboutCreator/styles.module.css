@@ -5,6 +5,7 @@
 .secondBlog {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5% 0;
 }
 
@@ -13,9 +14,8 @@
   font-style: italic;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
-  /* or 140% */
-  width: 50%;
+  line-height: 140%;
+  width: 100%;
   text-align: justify;
   color: #000000;
 }
@@ -24,7 +24,6 @@
   max-width: 100%;
   margin-left: 5%;
 }
-
 .author {
   font-family: "Montserrat", sans-serif;
   font-style: normal;

@@ -10,30 +10,30 @@ import styles from "../../../Sections/NewsMain/newsMain.module.scss";
 const SwiperCards = ({margin, padding, breakpoints}) => {
     const recomendate = [{
         image: one,
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         title: "Holoplot",
         date: "12/12/2020"
     },
         {
             image: one,
-            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ",
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
             title: "Holoplot",
             date: "12/12/2020"
         },
         {
             image: one,
-            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ",
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
             title: "Holoplot",
             date: "12/12/2020"
         }, {
             image: fourteen,
-            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ",
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
             title: "Holoplot",
             date: "12/12/2020"
         },
         {
             image: one,
-            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ",
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
             title: "Holoplot",
             date: "12/12/2020"
         }];

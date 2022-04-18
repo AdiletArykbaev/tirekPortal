@@ -2,14 +2,12 @@ import React from 'react';
 import styles from './contacts.module.scss';
 import geo from '../../Assets/icons/geo.png';
 import email from '../../Assets/icons/email.png';
-import inst from '../../Assets/images/instagram.png';
-import facebook from '../../Assets/images/facebook.png';
-import youtube from '../../Assets/images/youtube.png';
-import twitter from '../../Assets/images/twitter.png';
 import Map from "../../Сomponents/atoms/Map";
-import {MaxMedium, MaxSmall, MinSmall} from "../../utils/mediaQuiries";
+import {MaxSmall, MinSmall} from "../../utils/mediaQuiries";
+import {useNavigate} from "react-router-dom";
 
 const Contacts = () => {
+    const navigate = useNavigate();
     return (
         <div className={styles.wrapper}>
             <div className="wrapper">
@@ -24,7 +22,7 @@ const Contacts = () => {
                                 <p className={styles.text}>Нажмите на кнопку “Обратиться”, чтобы узнать подробнее об
                                     инструкциях.</p>
                             </div>
-                            <button className={styles.btn}>Обратиться</button>
+                            <button onClick={() => navigate('/appeal')} className={styles.btn}>Обратиться</button>
                         </div>
                         <div className={styles.box}>
                             <p className={styles.info}><img src={geo} alt=""/> 720021, Кыргызстан, ул. Ибраимова 96,
@@ -32,13 +30,21 @@ const Contacts = () => {
                             </p>
                             <p className={styles.info}><img src={email} alt=""/>tirek.org@gmail.com</p>
                             <div className={styles.icons}>
-                                <img src={inst} alt=""/>
-                                <img src={facebook} alt=""/>
-                                <img src={youtube} alt=""/>
-                                <img src={twitter} alt=""/>
+                                <a target="_blank" href="https://www.instagram.com/">
+                                    <i className="ri-instagram-line"/>
+                                </a>
+                                <a target="_blank" href="https://www.facebook.com/">
+                                    <i className="ri-facebook-box-fill"/>
+                                </a>
+                                <a target="_blank" href="https://www.youtube.com/">
+                                    <i className="ri-youtube-fill"/>
+                                </a>
+                                <a target="_blank" href="https://twitter.com/">
+                                    <i className="ri-twitter-fill"/>
+                                </a>
                             </div>
                             <MinSmall>
-                                <Map height={260} width={'100%'}/>
+                                <Map height={220} width={'100%'}/>
                             </MinSmall>
                             <MaxSmall>
                                 <Map height={150} width={'100%'}/>

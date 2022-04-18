@@ -26,7 +26,7 @@
   margin: 0;
   font-weight: 500;
   font-size: 22px;
-  line-height: 38px;
+  line-height: 130%;
   color: #4D4D4D;
   display: flex;
   column-gap: 15px;
@@ -40,6 +40,15 @@
 .small {
   position: relative;
   padding: 0 65px;
+}
+
+@media (max-width: 1600px) {
+  .title {
+    font-size: 40px;
+  }
+  .item {
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 1200px) {

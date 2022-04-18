@@ -11,7 +11,13 @@
     align-items: center;
     justify-content: center;
     left: 0;
+    cursor: pointer;
 }
+
+.mainSwiper .swiper .swiper-button-prev:hover, .mainSwiper .swiper .swiper-button-next:hover {
+    background: #0D6C00;
+}
+
 
 .mainSwiper .swiper .swiper-button-next {
     width: 58px;
@@ -22,7 +28,9 @@
     align-items: center;
     justify-content: center;
     right: 0;
+    cursor: pointer;
 }
+
 
 .mainSwiper .swiper .swiper-button-disabled {
     background: #E6E6E6;
@@ -36,12 +44,14 @@
 
 @media (max-width: 1600px) {
     .mainSwiper .swiper .swiper-button-prev, .mainSwiper .swiper .swiper-button-next {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
     }
 
     .mainSwiper .swiper .swiper-button-prev::after, .mainSwiper .swiper .swiper-button-next::after {
-        font-size: 22px;
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
     }
 }
 

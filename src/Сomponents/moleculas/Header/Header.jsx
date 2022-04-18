@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import {HeaderLogo} from "../../../Assets/icons";
 import {Navigation} from "../../atoms";
 import {MaxMedium, MinMedium} from "../../../utils/mediaQuiries";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const Header = () => {
     const [color, setColor] = useState("");
@@ -47,7 +47,8 @@ const Header = () => {
         return () => {
             window.removeEventListener("scroll", listenScrollEvent);
         };
-    }, [])
+    }, []);
+    const navigate = useNavigate();
 
     const [menu, setMenu] = useState(false);
     return (
@@ -63,7 +64,7 @@ const Header = () => {
                         <div className={styles.navigation}>
                             <Navigation links={links}/>
                         </div>
-                        <button className={styles.button}>Связаться</button>
+                        <button onClick={() => navigate('/appeal')} className={styles.button}>Обратиться</button>
                     </MinMedium>
                     <MaxMedium>
                         <div className={styles.burger}>
