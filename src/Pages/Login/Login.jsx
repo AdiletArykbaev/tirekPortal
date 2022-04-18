@@ -27,8 +27,10 @@ const Login = () => {
  
  const handlerSubmit=(e)=>{
    const fetchData =  login(username,password).then(response=>{
-    localStorage.setItem("token",JSON.stringify(response.value))
-   })
+    console.log(response)
+    localStorage.setItem("token", response.jwt)
+  })
+
    navigate("/admin")
 
  

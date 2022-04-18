@@ -17,14 +17,20 @@ export const login = async (username,password)=>{
 }
 
 export const newsPost = async (file,postBody)=>{
-  const response = await api.post(CREATE_POST_URL,{
-    authenticated:true,
-    
-    file,
-    createPostDto: postBody,
-
-
-  
+  const response = await api.post(CREATE_POST_URL, {
+    createPostDto: {
+      "description": "string",
+      "head": "string",
+      "youtubeLink": "string",
+      
+    }
+  }
+  , {
+    params: {
+      authenticated: true,
+      "authorities[0].authority": localStorage.getItem("token"),
+   
+    }
   })
   console.log("backend response", response)
   return response

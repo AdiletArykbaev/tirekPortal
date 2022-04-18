@@ -8,6 +8,7 @@ import NavigateBtn from "../../Сomponents/atoms/NavigateBtn";
 import { useEffect } from 'react';
 import { useDispatch,useSelector } from 'react-redux';
 import { getAllNews } from '../../Store/Thunks/newsThunk';
+import { getNews } from '../../Requests/request';
 
 
 const NewsPage = () => {
@@ -70,6 +71,7 @@ const NewsPage = () => {
     useEffect(()=>{
         dispatch(getAllNews)
         console.log(state)
+        console.log(getNews())
     },[])
 
     return (
