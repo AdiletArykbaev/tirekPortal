@@ -11,7 +11,7 @@ const NewsMain = () => {
     const swiperBreakpoints = {
         1600: {
             slidesPerView: 4,
-            spaceBetween: 100,
+            spaceBetween: 50,
         },
         921: {
             slidesPerView: 3,

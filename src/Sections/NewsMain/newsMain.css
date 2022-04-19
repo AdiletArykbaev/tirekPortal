@@ -3,8 +3,8 @@
 }
 
 .mainSwiper .swiper .swiper-button-prev {
-    width: 58px;
-    height: 58px;
+    width: 50px;
+    height: 50px;
     background: #14AD02;
     border-radius: 50%;
     display: flex;
@@ -20,8 +20,8 @@
 
 
 .mainSwiper .swiper .swiper-button-next {
-    width: 58px;
-    height: 58px;
+    width: 50px;
+    height: 50px;
     background: #14AD02;
     border-radius: 50%;
     display: flex;
@@ -39,6 +39,7 @@
 
 .mainSwiper .swiper-button-prev::after, .mainSwiper .swiper-button-next::after {
     color: white;
+    font-size: 28px;
 }
 
 
