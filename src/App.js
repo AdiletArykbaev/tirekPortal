@@ -7,7 +7,7 @@ import {NewsCard} from "./Сomponents/atoms"
 import {useEffect} from "react";
 import 'remixicon/fonts/remixicon.css'
 import PrivateRoute from './PrivateRoute/PrivateRoute';
-import ProjectItem from "./Pages/ProjectItem";
+import ProjectItem from "./Pages/Item";
 
 function App({store}) {
     const location = useLocation();

@@ -1,16 +1,18 @@
 import React from 'react'
 import styles from "./styles.module.scss"
 
-const News = ({title,body,image,data,id}) => {
-  return (
-    <div className={styles.wrapper}>
+const News = ({title, body, image, data, id}) => {
+    return (
+        <div className={styles.wrapper}>
             <div className={styles.firstBlock}>
-              <img src={image} alt="image" />
-           </div>
+                <img src={image} alt=""/>
+            </div>
             <div className={styles.secondBlock}>
-                <h4 className={styles.data}>
-                    {data}
-                </h4>
+                {
+                    data !== undefined ?
+                        <h4 className={styles.data}>{data}</h4>
+                        : ''
+                }
                 <h2 className={styles.title}>
                     {title}
                 </h2>
@@ -18,8 +20,8 @@ const News = ({title,body,image,data,id}) => {
                     {body}
                 </p>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default News

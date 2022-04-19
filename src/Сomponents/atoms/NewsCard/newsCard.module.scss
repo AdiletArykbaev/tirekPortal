@@ -16,10 +16,10 @@
 }
 
 .img {
-  width: auto;
-  height: auto;
-  display: block;
   max-width: unset;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;

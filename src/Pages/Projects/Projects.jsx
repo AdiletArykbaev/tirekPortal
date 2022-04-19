@@ -79,7 +79,7 @@ const Projects = () => {
                 <SubHeader link={links}/>
                 <div className={styles.content_wrapper}>
                     <h1 className={styles.title}>Наши проекты</h1>
-                    <News title={news.title} body={news.body} data={news.data} image={news.image}/>
+                    <News title={news.title} body={news.body} image={news.image}/>
                     <div className={styles.recomendate}>
                         {recomendate.map((item => <div className={styles.box}>
                             <NewsCard title={item.title} cardDate={item.date}

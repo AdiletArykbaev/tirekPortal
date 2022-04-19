@@ -11,7 +11,7 @@ const ContactPage = () => {
                         <h1 className={styles.appealWord}>Обращение</h1>
                         <div className={styles.appealContent}>
                             <div className={styles.urmat}>
-                                Уважаемая заявитель?
+                                Уважаемый заявитель!
                             </div>
                             <div className={styles.p}>
                                 Обращения в общественный фонд “Эне-балага тирек” принимаются в электронном формате.
@@ -83,13 +83,13 @@ const ContactPage = () => {
                                         <TextField className={styles.inputPhones} id="outlined-basic"
                                                    label="ФИО" variant="outlined"/>
                                         <TextField className={styles.inputPhones} id="outlined-basic"
-                                                   label="Номер телефона*" variant="outlined"/>
+                                                   label="Номер телефона" variant="outlined"/>
                                         <TextField className={styles.inputPhones} id="outlined-basic"
                                                    label="Электронная почта" variant="outlined"/>
                                     </div>
                                     <div className={styles.formDiv}>
                                         <TextField multiline
-                                                   rows={5} id="outlined-basic" label="Напишите сообщение*"
+                                                   rows={5} id="outlined-basic" label="Напишите сообщение"
                                                    variant="outlined"
                                                    className={styles.inputsComment}/>
                                         <div className={styles.BtnDownload}>

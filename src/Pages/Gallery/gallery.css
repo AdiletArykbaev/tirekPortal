@@ -26,7 +26,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 32px;
+    height: 700px;
+    row-gap: 15px;
 }
 
 .gallery__content img {
@@ -34,29 +35,71 @@
     transition: 0.2s;
 }
 
-.gallery__content img:hover {
+.gallery__main_content {
+    margin: 40px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+    height: 170px;
+}
+
+.gallery__main_content .gallery__box {
+    height: 100%;
+}
+
+/*.gallery::after {*/
+/*    content: '';*/
+/*    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #F8FFFF 100.63%);*/
+/*    width: 100%;*/
+/*    height: 640px;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*}*/
+
+
+.gallery__box {
+    width: calc(25% - 15px);
+    height: 23%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.2s;
+}
+.gallery__box:hover {
     -webkit-box-shadow: 0 1px 8px 5px rgba(34, 60, 80, 0.26);
     -moz-box-shadow: 0 1px 8px 5px rgba(34, 60, 80, 0.26);
     box-shadow: 0 1px 8px 5px rgba(34, 60, 80, 0.26);
     transition: 0.2s;
 }
 
-.gallery::after {
-    content: '';
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #F8FFFF 100.63%);
-    width: 100%;
-    height: 640px;
+.gallery__box img {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .gallery__small {
     width: 23.52%;
 }
 
+.gallery__small img {
+    width: 100%;
+    height: 100%;
+    max-width: unset;
+}
+
 .gallery__mid {
     width: 30%;
+}
+
+.gallery__mid img {
+    width: 100%;
+    height: 100%;
+    max-width: unset;
 }
 
 .gallery__content_col {
@@ -66,7 +109,13 @@
     row-gap: 32px;
 }
 
-.gallery__content_col img {
+.gallery__col_item {
+    width: 100%;
+    max-width: unset;
+}
+
+.gallery__col_item img {
+    height: 100%;
     width: 100%;
     max-width: unset;
 }
@@ -169,6 +218,7 @@
         column-gap: 10px;
         row-gap: 10px;
     }
+
     .gallery__content img {
         width: calc(50% - 5px);
     }
