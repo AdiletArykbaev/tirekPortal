@@ -15,25 +15,26 @@ export const login = async (username, password) => {
     return res
 };
 
-export const newsPost = async (file, postBody) => {
-    const response = await api.post(CREATE_POST_URL, {
-        authenticated: true,
-
-        file,
-        createPostDto: postBody,
-    });
-    console.log("backend response", response);
-    return response
-};
-export const getNews = async () => {
-    const response = await api.get(GET_NEWS_URL);
-    return response
-};
-
-// const GET_PROJECTS_URL = '/admin/project/getAll';
-//
-// export const projectsPost = async (file, postBody) => {
-//     const response = await api.post(GET_PROJECTS_URL, {
-//
-//     })
-// };
+export const newsPost = async (file,postBody)=>{
+  const response = await api.post(CREATE_POST_URL, {
+    createPostDto: {
+      "description": "string",
+      "head": "string",
+      "youtubeLink": "string",
+      
+    }
+  }
+  , {
+    params: {
+      authenticated: true,
+      "authorities[0].authority": localStorage.getItem("token"),
+   
+    }
+  })
+  console.log("backend response", response)
+  return response
+}
+export const getNews = async ()=>{
+  const response = await api.get(GET_NEWS_URL)
+  return response
+}

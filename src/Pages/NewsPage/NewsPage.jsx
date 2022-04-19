@@ -6,9 +6,10 @@ import News from '../../Сomponents/organisms/News/News';
 import {LastNews} from '../../Сomponents/moleculas';
 import {NewsCard} from '../../Сomponents/atoms';
 import NavigateBtn from "../../Сomponents/atoms/NavigateBtn";
-import {useEffect} from 'react';
-import {useDispatch, useSelector} from 'react-redux';
-import {getAllNews} from '../../Store/Thunks/newsThunk';
+import { useEffect } from 'react';
+import { useDispatch,useSelector } from 'react-redux';
+import { getAllNews } from '../../Store/Thunks/newsThunk';
+import { getNews } from '../../Requests/request';
 
 
 const NewsPage = () => {

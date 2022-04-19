@@ -13,9 +13,16 @@
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: 400;
+<<<<<<< HEAD
+  font-size: 19px;
+  line-height: 28px;
+  /* or 140% */
+  width: 50%;
+=======
   font-size: 20px;
   line-height: 140%;
   width: 100%;
+>>>>>>> 4451ae7b3a02a1388d32fae74bf391fcb96102f1
   text-align: justify;
   color: #000000;
 }

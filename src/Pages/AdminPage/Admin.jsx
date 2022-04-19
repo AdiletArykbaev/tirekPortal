@@ -8,11 +8,12 @@ const Admin = () => {
     const [file,setFile] = useState([])
     const [title,setTitle] = useState("")
     const dispatch = useDispatch()
+    const test = []
   return (
     <div className={styles.wrapper}>
       <form onSubmit={(e)=>{
         e.preventDefault()
-        dispatch(addNews(file,title,text))
+        dispatch(addNews(test,title,text))
       }}>
           <h1 className={styles.title}>Admin Panel</h1>
            <input onChange={(e)=>{
