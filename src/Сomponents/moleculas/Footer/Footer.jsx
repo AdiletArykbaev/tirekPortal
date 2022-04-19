@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../../Assets/images/footerLogo.png';
+import logo from '../../../Assets/images/logo.png';
 import {Link} from 'react-router-dom';
 import './footer.css';
 
@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="wrapper">
                 <div className="footer__row">
-                    <img src={logo} alt="Tirek"/>
+                    <img className='footer__logo' src={logo} alt="Tirek"/>
                     <ul className="footer__menu">
                         <h2 className="footer__title">Быстрые ссылки</h2>
                         <li>

@@ -54,7 +54,7 @@ const Gallery = ({page}) => {
                             <MinSmall>
                                 <div className='gallery__main_content'>
                                     {
-                                        photos.slice(0, 4).map((item, idx) => (
+                                        photos.slice(0, 3).map((item, idx) => (
                                             <div className="gallery__box">
                                                 <img data-fancybox="gallery" data-src={item} src={item} alt=""/>
                                             </div>
@@ -68,7 +68,9 @@ const Gallery = ({page}) => {
                                         {
                                             photos.map((item) => (
                                                 <SwiperSlide>
-                                                    <img className="gallery__swiper_img" src={item} alt=""/>
+                                                    <div className="gallery__swiper_box">
+                                                        <img className="gallery__swiper_img" src={item} alt=""/>
+                                                    </div>
                                                 </SwiperSlide>
                                             ))
                                         }

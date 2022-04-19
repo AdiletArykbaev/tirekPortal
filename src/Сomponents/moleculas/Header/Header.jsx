@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import styles from "./styles.module.scss";
-import {HeaderLogo} from "../../../Assets/icons";
+import logo from '../../../Assets/images/logo.png';
 import {Navigation} from "../../atoms";
 import {MaxMedium, MinMedium} from "../../../utils/mediaQuiries";
 import {Link, useNavigate} from "react-router-dom";
@@ -57,7 +57,7 @@ const Header = () => {
                 <div className={styles.pageWrapper}>
                     <div className={styles.logoBlock}>
                         <Link to="/">
-                            <img src={HeaderLogo} alt="Logo"/>
+                            <img src={logo} alt="Logo"/>
                         </Link>
                     </div>
                     <MinMedium>

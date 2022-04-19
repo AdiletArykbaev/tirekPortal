@@ -59,12 +59,14 @@
     background: #FFFFFF;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
-    border: none;
+    border: #00000050 1px solid;
     padding: 15px 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    opacity: 0.5;
+    color: #00000050;
+    outline: #00000050;
+    box-sizing: border-box;
 }
 
 .footer__input::placeholder {
@@ -80,11 +82,14 @@
     font-size: 15px;
     line-height: 18px;
     color: #FFF;
-    padding: 13px;
+    padding: 14px;
     border: 1px solid #14AD02;
     margin: 0 0 0 10px;
 }
-
+.footer__logo {
+    width: 200px;
+    max-width: unset;
+}
 .footer__btn:hover {
     border: 1px solid #14AD02;
     background: transparent;
@@ -109,6 +114,10 @@
     font-size: 14px;
     line-height: 22px;
     color: black;
+}
+
+.footer__menu a:hover {
+    color: #14AD02;
 }
 
 .footer__contact p {
